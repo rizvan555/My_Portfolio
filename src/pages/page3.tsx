@@ -22,18 +22,20 @@ function Page3() {
   }
   const content = languageContain[click];
   return (
-    <div className=" bg-slate-200 py-10">
+    <div className=" py-10">
       <header className=" flex justify-center">
-        <h2 className=" text-3xl font-bold mb-8 tracking-wider">Languages</h2>
+        <h2 className=" text-4xl font-bold mb-8 tracking-wider font-serif">
+          Languages
+        </h2>
       </header>
       <main className=" flex justify-around p-6">
-        <div className=" w-[40vw] bg-slate-800">
-          <ul className=" flex flex-col justify-center items-center py-10 text-slate-50 text-3xl">
+        <div className=" w-[40vw] bg-slate-700">
+          <ul className=" flex flex-col justify-center items-center py-10 text-[#fff] text-3xl">
             {languages.map((language) => {
               return (
                 <li
                   onClick={() => handleClick(language)}
-                  className="mb-6 tracking-wider cursor-pointer text-slate-400 hover:text-slate-50 active:text-slate-50 "
+                  className="mb-6 tracking-wider cursor-pointer font-serif text-slate-300 hover:text-[#fff] active:text-[#fff] hvr-underline-from-center pb-1"
                 >
                   {language}
                 </li>

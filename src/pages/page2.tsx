@@ -1,4 +1,5 @@
 import React from 'react';
+import codingMan from '../resource/images/codingMan.jpg';
 
 function Page2() {
   const skills = [
@@ -19,7 +20,14 @@ function Page2() {
     'VSCode',
   ];
   return (
-    <section className=" bg-slate-400 flex justify-center items-center py-16">
+    <section
+      style={{
+        backgroundImage: `url(${codingMan})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+      }}
+      className=" flex justify-center items-center py-16"
+    >
       <div className=" flex flex-col items-center text-center bg-slate-50 w-[70vw] px-8">
         <span className=" py-10 tracking-wider text-slate-800 font-bold">
           ABOUT MYSELF
@@ -31,7 +39,7 @@ function Page2() {
           and JavaScript, and I have worked with popular frameworks and
           libraries like React and Redux.
         </h2>
-        <button className=" px-7 py-5 w- border m-10 tracking-wide font-bold  bg-slate-800 text-slate-50 text-m">
+        <button className=" px-7 py-5 w- border m-10 tracking-wide font-bold  bg-slate-700 text-slate-50 text-m">
           DOWNLOAD RESUME
         </button>
         <div className=" border border-slate-600 w-[60vw]" />
