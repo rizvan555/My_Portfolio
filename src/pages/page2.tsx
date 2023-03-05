@@ -8,6 +8,7 @@ function Page2() {
     'Tailwind',
     'Bootstrap',
     'JavaScript',
+    'TypeScript',
     'ReactJS',
     'Material UI',
     'NodeJS',
@@ -18,9 +19,9 @@ function Page2() {
     'VSCode',
   ];
   return (
-    <section className=" bg-slate-500 h-[100vh] flex justify-center items-center">
+    <section className=" bg-slate-400 flex justify-center items-center py-16">
       <div className=" flex flex-col items-center text-center bg-slate-50 w-[70vw] px-8">
-        <span className=" py-10 tracking-wider text-[#49fd56] font-bold">
+        <span className=" py-10 tracking-wider text-slate-800 font-bold">
           ABOUT MYSELF
         </span>
         <h2 className=" text-2xl leading-extra-loose">
@@ -30,15 +31,15 @@ function Page2() {
           and JavaScript, and I have worked with popular frameworks and
           libraries like React and Redux.
         </h2>
-        <button className=" px-7 py-5 w-72 border border-slate-100/50 m-10 font-bold bg-[#49fd56]">
+        <button className=" px-7 py-5 w- border m-10 tracking-wide font-bold  bg-slate-800 text-slate-50 text-m">
           DOWNLOAD RESUME
         </button>
         <div className=" border border-slate-600 w-[60vw]" />
-        <span className=" py-4">Skills</span>
+        <span className=" py-4 font-bold tracking-wide text-xl">Skills</span>
         <ul className="flex justify-center gap-4 w-[60vw] flex-wrap py-7">
           {skills.map((skill) => {
             return (
-              <li className=" w-[10vw] hvr-shutter-out-vertical ">{skill}</li>
+              <li className=" w-[10vw] hvr-shutter-out-vertical">{skill}</li>
             );
           })}
         </ul>

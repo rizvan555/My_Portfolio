@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       lineHeight: {
-        'extra-loose': '3.5',
-        12: '3rem',
+        'extra-loose': '4',
+        16: '4rem',
       },
     },
   },

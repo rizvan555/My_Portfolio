@@ -20,12 +20,12 @@ function Page1() {
           </ul>
         </nav>
       </header>
-      <main className=" flex items-center p-5 justify-around">
+      <main className=" flex items-center py-12 justify-around">
         <section className=" w-[40vw]">
-          <h1 className=" text-5xl mb-4 text-slate-200/100 font-serif">
+          <h1 className=" text-5xl mb-8 text-slate-200/100 font-serif">
             Full Stack Developer
           </h1>
-          <h4 className=" mb-10 text-lg font-light">
+          <h4 className=" mb-12 text-lg font-light">
             I'm a MERN full stack developer with a passion for web development.
             I'm dedicated to constantly learning and improving my skills.
           </h4>
