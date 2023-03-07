@@ -47,7 +47,9 @@ function Page2() {
         <ul className="flex justify-center gap-4 w-[60vw] flex-wrap py-7">
           {skills.map((skill) => {
             return (
-              <li className=" w-[10vw] hvr-shutter-out-vertical">{skill}</li>
+              <li className=" w-[10vw] hvr-shutter-out-vertical cursor-pointer">
+                {skill}
+              </li>
             );
           })}
         </ul>
