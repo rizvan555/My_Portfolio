@@ -12,7 +12,7 @@ function Page1() {
           <ul className="flex gap-14 cursor-pointer">
             {navbar.map((nav) => {
               return (
-                <li className=" last-of-type:underline last-of-type:text-slate-200/90 hvr-underline-from-center pb-1">
+                <li className=" last-of-type:text-slate-200/90 hvr-underline-from-center pb-1">
                   {nav}
                 </li>
               );
