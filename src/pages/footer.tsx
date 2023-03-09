@@ -1,7 +1,5 @@
 import React from 'react';
-import { BsFacebook } from 'react-icons/bs';
-import { FaInstagram } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
+import SocialMedia from '../components/socialMedia';
 
 function Footer() {
   const inputContainer = [
@@ -18,6 +16,7 @@ function Footer() {
       placheholder: 'Subject',
     },
   ];
+
   return (
     <div className="flex justify-center bg-slate-700 h-[100vh] p-6 flex-col">
       <h3 className="w-[60vw] text-3xl text-slate-50 text-center">
@@ -60,31 +59,12 @@ function Footer() {
           <a href="#" className="mb-10">
             karimovrizvan84@gmail.com
           </a>
-          <section className="mb-6">
+          <section className="mb-14">
             <button className="border p-3 w-[20vw] hvr-sweep-to-right">
               DOWNLOAD RESUME
             </button>
           </section>
-          <div className="flex gap-3">
-            <a
-              href=""
-              className=" w-12 h-12 bg-slate-600 rounded-full flex items-center justify-center"
-            >
-              <BsFacebook size={25} />
-            </a>
-            <a
-              href=""
-              className=" w-12 h-12 bg-slate-600 rounded-full flex items-center justify-center"
-            >
-              <FaInstagram size={25} />
-            </a>
-            <a
-              href=""
-              className=" w-12 h-12 bg-slate-600 rounded-full flex items-center justify-center"
-            >
-              <FaLinkedin size={25} />
-            </a>
-          </div>
+          <SocialMedia />
         </section>
       </main>
     </div>
