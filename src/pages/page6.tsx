@@ -1,4 +1,5 @@
 import React from 'react';
+import 'animate.css/animate.min.css';
 
 function Page6() {
   const experiances = [
@@ -18,7 +19,7 @@ function Page6() {
   return (
     <div>
       <header className="flex justify-start py-16 px-20">
-        <h2 className="text-5xl font-bold tracking-wider font-serif mb-[2vh]">
+        <h2 className="text-5xl font-bold tracking-wider font-serif mb-[2vh] animate__animated animate__fadeInLeft">
           Education
         </h2>
       </header>

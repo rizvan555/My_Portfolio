@@ -37,7 +37,7 @@ function SocialMedia() {
           return (
             <a
               href={media.link}
-              className=" w-12 h-12 bg-slate-500 flex items-center justify-center rounded-full"
+              className=" w-12 h-12 bg-slate-500 flex items-center justify-center rounded-full hvr-wobble-top"
             >
               {media.icon}
             </a>

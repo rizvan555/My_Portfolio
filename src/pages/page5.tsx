@@ -1,20 +1,20 @@
 import React from 'react';
-import developer from '../resource/images/developer.jpg';
+import codingMan1 from '../resource/images/codingMan1.jpg';
 
 function Page5() {
   return (
     <div
       style={{
-        backgroundImage: `url(${developer})`,
+        backgroundImage: `url(${codingMan1})`,
         backgroundPosition: 'bottom left',
-        backgroundSize: '56vw',
+        backgroundSize: '45vw',
         backgroundRepeat: 'no-repeat',
       }}
-      className="flex justify-between items-center bg-slate-700 py-36 mt-6"
+      className="flex justify-between items-center bg-slate-700 py-36 mt-2"
     >
       <section className="w-[40vw]"></section>
-      <section className=" flex justify-between w-[40vw] pr-5 tracking-wide leading-extra-loose mt-6">
-        <p className="text-[#fff] text-[1rem]">
+      <section className=" flex justify-between w-[50vw] pr-5 tracking-wide leading-extra-loose mt-6">
+        <p className="text-[#fff] text-[1.1rem]">
           Although I have experience in frontend development, I am not satisfied
           with just that. I constantly work on improving myself and keeping up
           with new technologies, frameworks, and all the latest developments in

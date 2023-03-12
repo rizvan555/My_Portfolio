@@ -176,3 +176,13 @@
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
+
+/* @layer utilities {
+  .animate__animated {
+    --tw-animation-duration: 1s;
+    --tw-animation-fill-mode: both;
+  }
+  .animate__fadeIn {
+    --tw-animation-name: fadeIn;
+  }
+} */

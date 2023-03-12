@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'animate.css/animate.min.css';
 
 function Page3() {
   const [click, setClick] = useState('Deutsch');
@@ -21,10 +22,11 @@ function Page3() {
     setClick(language);
   }
   const content = languageContain[click];
+
   return (
     <div className=" py-10">
       <header className=" flex pl-20">
-        <h2 className=" text-4xl font-bold mb-8 tracking-wider font-serif">
+        <h2 className=" text-4xl font-bold mb-8 tracking-wider font-serif animate__animated animate__fadeInLeft">
           Languages
         </h2>
       </header>
