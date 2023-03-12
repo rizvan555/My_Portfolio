@@ -23,7 +23,7 @@ function Page3() {
   const content = languageContain[click];
   return (
     <div className=" py-10">
-      <header className=" flex justify-center">
+      <header className=" flex pl-20">
         <h2 className=" text-4xl font-bold mb-8 tracking-wider font-serif">
           Languages
         </h2>
