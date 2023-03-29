@@ -1,8 +1,13 @@
-import React from 'react';
 import myPhoto from '../resource/images/myPhoto.png';
+import Page2 from './page2';
+import { useRef } from 'react';
 
 function Page1() {
   const navbar = ['Home', 'About', 'Projects', 'Contact', 'Fire me an Email'];
+
+  const handleScroll = () => {
+    window.scroll(0, 700);
+  };
 
   return (
     <div
@@ -19,11 +24,22 @@ function Page1() {
         <nav>
           <ul className="flex gap-14 cursor-pointer">
             {navbar.map((nav) => {
-              return (
-                <li className=" last-of-type:text-slate-200/90 hvr-underline-from-center pb-1">
-                  {nav}
-                </li>
-              );
+              if (nav === 'About') {
+                return (
+                  <li
+                    className=" last-of-type:text-slate-200/90 hvr-underline-from-center pb-1"
+                    onClick={handleScroll}
+                  >
+                    {nav}
+                  </li>
+                );
+              } else {
+                return (
+                  <li className=" last-of-type:text-slate-200/90 hvr-underline-from-center pb-1">
+                    {nav}
+                  </li>
+                );
+              }
             })}
           </ul>
         </nav>
