@@ -186,3 +186,27 @@
     --tw-animation-name: fadeIn;
   }
 } */
+
+@layer utilities {
+  .animate__animated {
+    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+}

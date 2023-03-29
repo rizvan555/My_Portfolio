@@ -30,7 +30,7 @@ function Page1() {
       </header>
       <main className=" flex">
         <section className=" w-[40vw] mt-40 ml-24">
-          <h1 className=" text-5xl mb-8 text-slate-200/100 font-serif tracking-wide">
+          <h1 className=" text-5xl mb-8 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap">
             Full Stack Developer
           </h1>
           <h4 className=" mb-12 text-lg font-light tracking-wide">
