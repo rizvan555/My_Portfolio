@@ -1,5 +1,6 @@
 import React from 'react';
 import codingMan from '../resource/images/codingMan.jpg';
+import 'animate.css';
 
 function Page2() {
   const skills = [
@@ -39,7 +40,7 @@ function Page2() {
           and JavaScript, and I have worked with popular frameworks and
           libraries like React and Redux.
         </h2>
-        <button className=" px-7 py-5 w- border m-10 tracking-wide font-bold  bg-slate-700 text-slate-50 text-m hvr-sweep-to-right">
+        <button className=" px-7 py-5 w- border m-10 tracking-wide font-bold  bg-slate-700 text-slate-50 text-m hvr-sweep-to-right animate__animated animate__fadeInLeft">
           DOWNLOAD RESUME
         </button>
         <div className=" border border-slate-600 w-[60vw]" />

@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #01ff55;
+  background: #ff033e;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -39,7 +39,7 @@
 .hvr-sweep-to-right:hover,
 .hvr-sweep-to-right:focus,
 .hvr-sweep-to-right:active {
-  color: #000;
+  color: #fff;
   font-weight: bold;
 }
 .hvr-sweep-to-right:hover:before,
@@ -67,7 +67,7 @@
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #01ff55;
+  background: #ff033e;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -105,7 +105,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #01ff55;
+  background: #ff033e;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -153,7 +153,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #01ff55;
+  background: #ff033e;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50%;
@@ -177,15 +177,15 @@
   transform: scaleY(1);
 }
 
-/* @layer utilities {
-  .animate__animated {
-    --tw-animation-duration: 1s;
-    --tw-animation-fill-mode: both;
-  }
-  .animate__fadeIn {
-    --tw-animation-name: fadeIn;
-  }
-} */
+/* ========== Animations =============================== */
+
+.animate__animated.animate__lightSpeedInRight {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__lightSpeedInLeft {
+  --animate-duration: 1s;
+}
 
 @layer utilities {
   .animate__animated {
@@ -199,7 +199,6 @@
       width: 100%;
     }
   }
-  /* The typewriter cursor effect */
   @keyframes blink-caret {
     from,
     to {

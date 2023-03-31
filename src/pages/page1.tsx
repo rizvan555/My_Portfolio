@@ -1,12 +1,10 @@
 import myPhoto from '../resource/images/myPhoto.png';
-import Page2 from './page2';
-import { useRef } from 'react';
 
 function Page1() {
   const navbar = ['Home', 'About', 'Projects', 'Contact', 'Fire me an Email'];
 
   const handleScroll = () => {
-    window.scroll(0, 700);
+    window.scroll(0, 720);
   };
 
   return (
@@ -22,12 +20,12 @@ function Page1() {
       <header className="flex justify-between px-8 py-5 border border-slate-700">
         <h2 className=" font-bold text-xl text-slate-200/100">Rizvan K.</h2>
         <nav>
-          <ul className="flex gap-14 cursor-pointer">
+          <ul className="flex gap-14 cursor-pointer animate__animated animate__lightSpeedInRight ">
             {navbar.map((nav) => {
               if (nav === 'About') {
                 return (
                   <li
-                    className=" last-of-type:text-slate-200/90 hvr-underline-from-center pb-1"
+                    className=" last-of-type:text-slate-200/90 hvr-underline-from-center pb-1 hover:text-white"
                     onClick={handleScroll}
                   >
                     {nav}
@@ -35,7 +33,7 @@ function Page1() {
                 );
               } else {
                 return (
-                  <li className=" last-of-type:text-slate-200/90 hvr-underline-from-center pb-1">
+                  <li className=" last-of-type:text-slate-200/90 hvr-underline-from-center pb-1 hover:text-white ">
                     {nav}
                   </li>
                 );
@@ -53,7 +51,7 @@ function Page1() {
             I'm a MERN full stack developer with a passion for web development.
             I'm dedicated to constantly learning and improving my skills.
           </h4>
-          <button className=" border border-slate-500/60 w-36 p-4 text-xs font-bold hvr-bounce-to-right">
+          <button className=" border border-slate-500/60 w-36 p-4 text-xs font-bold hvr-bounce-to-right animate__animated animate__lightSpeedInLeft">
             HIRE ME
           </button>
         </section>
