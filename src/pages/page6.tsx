@@ -19,7 +19,10 @@ function Page6() {
   return (
     <div>
       <header className="flex justify-start py-16 px-20">
-        <h2 className="text-5xl font-bold tracking-wider font-serif mb-[2vh] animate__animated animate__fadeInLeft">
+        <h2
+          className="text-5xl font-bold tracking-wider font-serif mb-[2vh] animate__animated overflow-hidden"
+          style={{ animationDuration: '3s' }}
+        >
           Education
         </h2>
       </header>

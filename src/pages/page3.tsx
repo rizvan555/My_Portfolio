@@ -26,7 +26,10 @@ function Page3() {
   return (
     <div className=" py-10">
       <header className=" flex pl-20">
-        <h2 className=" text-4xl font-bold mb-8 tracking-wider font-serif animate__animated animate__fadeInLeft">
+        <h2
+          className=" text-4xl font-bold mb-8 tracking-wider font-serif animate__animated overflow-hidden whitespace-nowrap "
+          style={{ animationDuration: '4s' }}
+        >
           Languages
         </h2>
       </header>

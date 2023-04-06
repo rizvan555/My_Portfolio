@@ -12,6 +12,7 @@ function Page2() {
     'JavaScript',
     'TypeScript',
     'ReactJS',
+    'NextJS',
     'Material UI',
     'NodeJS',
     'Express',
@@ -19,6 +20,7 @@ function Page2() {
     'Git',
     'GitHub',
     'VSCode',
+    'Figma',
   ];
   return (
     <section

@@ -44,7 +44,7 @@ function Footer() {
             cols={60}
             rows={4}
           ></textarea>
-          <button className=" w-[20vw] p-4 text-slate-900 bg-slate-50 font-bold hvr-sweep-to-right">
+          <button className=" w-[20vw] p-4 text-slate-900 bg-slate-50 font-bold hvr-radial-out border">
             SEND MESSAGE
           </button>
         </section>
@@ -60,7 +60,10 @@ function Footer() {
             karimovrizvan84@gmail.com
           </a>
           <section className="mb-14">
-            <button className="border p-3 w-[20vw] hvr-sweep-to-right">
+            <button
+              className="border p-3 w-[20vw] hvr-radial-out"
+              style={{ backgroundColor: 'transparent' }}
+            >
               DOWNLOAD RESUME
             </button>
           </section>
