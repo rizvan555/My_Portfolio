@@ -372,7 +372,7 @@
 }
 
 .animate__animated.animate__lightSpeedInLeft {
-  --animate-duration: 1s;
+  --animate-duration: 2s;
 }
 
 .animate_animated.animate_jackInTheBox {
@@ -382,7 +382,7 @@
 
 @layer utilities {
   .animate__animated {
-    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation: typing 6.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
   @keyframes typing {
     from {
