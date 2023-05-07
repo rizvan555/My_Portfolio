@@ -12,7 +12,7 @@ function Page1() {
       style={{
         backgroundImage: `url(${myPhoto5})`,
         backgroundPosition: ' 100% 100%',
-        backgroundSize: '55vw',
+        backgroundSize: '50vw',
         backgroundRepeat: 'no-repeat',
       }}
       className="h-[100vh] bg-slate-700 z-0 text-slate-200/70"
