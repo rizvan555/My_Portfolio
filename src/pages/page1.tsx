@@ -1,4 +1,4 @@
-import IMG_1336-removebg-preview from '../resource/images/IMG_1336-removebg-preview.png';
+import myPhoto5 from '../resource/images/myPhoto5.png';
 
 function Page1() {
   const navbar = ['Home', 'About', 'Projects', 'Contact', 'Fire me an Email'];
@@ -10,7 +10,7 @@ function Page1() {
   return (
     <div
       style={{
-        backgroundImage: `url(${IMG_1336-removebg-preview})`,
+        backgroundImage: `url(${myPhoto5})`,
         backgroundPosition: ' 100% 100%',
         backgroundSize: '35vw',
         backgroundRepeat: 'no-repeat',
