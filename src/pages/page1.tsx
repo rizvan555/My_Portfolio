@@ -10,7 +10,7 @@ function Page1() {
   return (
     <div
       style={{
-        backgroundImage: `url(${myPhoto3})`,
+        backgroundImage: `url(${IMG_1336-removebg-preview})`,
         backgroundPosition: ' 100% 100%',
         backgroundSize: '35vw',
         backgroundRepeat: 'no-repeat',
