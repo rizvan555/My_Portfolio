@@ -52,13 +52,13 @@ function Footer() {
           <h3 className="mb-10 font-bold tracking-wider text-xl">CONTACT ME</h3>
           <p className="mb-5">
             Erlenbacher Straße 8, 67659 Kaiserslautern
-          </a>
+          </p>
           <p className="mb-5">
             +4917680358387
-          </a>
+          </p>
           <p className="mb-10">
             karimovrizvan84@gmail.com
-          </a>
+          </p>
           <section className="mb-14">
             <button
               className="border p-3 w-[20vw] hvr-radial-out"
