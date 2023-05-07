@@ -1,4 +1,4 @@
-import myPhoto3 from '../resource/images/myPhoto3.png';
+import IMG_1336-removebg-preview from '../resource/images/IMG_1336-removebg-preview.png';
 
 function Page1() {
   const navbar = ['Home', 'About', 'Projects', 'Contact', 'Fire me an Email'];
