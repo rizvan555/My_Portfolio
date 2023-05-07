@@ -19,6 +19,7 @@ function Page2() {
     'Material UI',
     'Git',
     'GitHub',
+    "WordPress"
     'VSCode',
     'Figma',
   ];
