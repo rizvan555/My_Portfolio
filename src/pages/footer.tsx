@@ -60,13 +60,15 @@ function Footer() {
             karimovrizvan84@gmail.com
           </p>
           <section className="mb-14">
-            <button
-              className="border p-3 w-[20vw] hvr-radial-out"
-              style={{ backgroundColor: 'transparent' }}
-              download="lebenslauf.pdf"
-              href="/src/resource/images/lebenslauf.pdf">
-              DOWNLOAD RESUME
-            </button>
+          <a
+  className="border p-3 w-[20vw] hvr-radial-out"
+  style={{ backgroundColor: 'transparent' }}
+  download="lebenslauf.pdf"
+  href="/src/resource/images/lebenslauf.pdf"
+>
+  DOWNLOAD RESUME
+</a>
+
           </section>
           <SocialMedia />
         </section>
