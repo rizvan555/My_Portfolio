@@ -65,7 +65,6 @@ function Footer() {
               style={{ backgroundColor: 'transparent' }}
               download="lebenslauf.pdf"
               href="/src/resource/images/lebenslauf.pdf">
-            >
               DOWNLOAD RESUME
             </button>
           </section>
