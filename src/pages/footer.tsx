@@ -55,7 +55,7 @@ function Footer() {
 
           <section className="mb-14">
             <a
-              className="border p-3 w-[20vw] hvr-radial-out text-center"
+              className="border p-3 w-[20vw] mt-5 hvr-radial-out text-center"
               style={{ backgroundColor: 'transparent' }}
               download="Lebenslauf.pdf"
               href="/Lebenslauf.pdf"
