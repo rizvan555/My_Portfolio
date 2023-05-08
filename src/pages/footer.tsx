@@ -61,7 +61,7 @@ function Footer() {
               className="border p-3 w-[20vw] hvr-radial-out text-center"
               style={{ backgroundColor: 'transparent' }}
               download="Lebenslauf.pdf"
-              href="/Lebenslauf.pdf"
+              href="../../public/Lebenslauf.pdf"
             >
               DOWNLOAD RESUME
             </a>
