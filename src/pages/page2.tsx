@@ -19,7 +19,6 @@ function Page2() {
     'Material UI',
     'Git',
     'GitHub',
-    "WordPress",
     'VSCode',
     'Figma',
   ];
@@ -43,15 +42,22 @@ function Page2() {
           and JavaScript, and I have worked with popular frameworks and
           libraries like React and Redux.
         </h2>
-        <button className=" px-7 py-5 w- border m-10 tracking-wide font-bold  bg-slate-700 text-slate-50 text-m hvr-sweep-to-right animate__animated animate__fadeInLeft">
+        <a
+          className=" px-7 py-5 w- border m-10 tracking-wide font-bold  bg-slate-700 text-slate-50 text-m hvr-sweep-to-right animate__animated animate__fadeInLeft"
+          download="Lebenslauf.pdf"
+          href="/Lebenslauf.pdf"
+        >
           DOWNLOAD RESUME
-        </button>
+        </a>
         <div className=" border border-slate-600 w-[60vw]" />
         <span className=" py-4 font-bold tracking-wide text-xl">Skills</span>
         <ul className="flex justify-center gap-4 w-[60vw] flex-wrap py-7">
-          {skills.map((skill) => {
+          {skills.map((skill, index) => {
             return (
-              <li className=" w-[10vw] hvr-shutter-out-vertical cursor-pointer hover:font-bold">
+              <li
+                key={index}
+                className=" w-[10vw] hvr-shutter-out-vertical cursor-pointer hover:font-bold"
+              >
                 {skill}
               </li>
             );
