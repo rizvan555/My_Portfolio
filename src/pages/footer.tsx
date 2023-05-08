@@ -47,15 +47,12 @@ function Footer() {
         </section>
         <section className=" w-60 flex flex-col mt-20 text-slate-50">
           <h3 className="mb-10 font-bold tracking-wider text-xl">CONTACT ME</h3>
-          <a href="#" className="mb-5">
-            Erlenbacher Straße 8, 67659 Kaiserslautern
-          </a>
-          <a href="#" className="mb-5">
-            +4917680358387
-          </a>
-          <a href="#" className="mb-10">
+          <a href="/address">Erlenbacher Straße 8, 67659 Kaiserslautern</a>
+          <a href="tel:+4917680358387">+4917680358387</a>
+          <a href="mailto:karimovrizvan84@gmail.com">
             karimovrizvan84@gmail.com
           </a>
+
           <section className="mb-14">
             <a
               className="border p-3 w-[20vw] hvr-radial-out text-center"
