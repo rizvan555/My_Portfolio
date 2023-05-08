@@ -17,6 +17,7 @@ function Page2() {
     'NodeJS',
     'Express',
     'Material UI',
+'WordPress',
     'Git',
     'GitHub',
     'VSCode',
