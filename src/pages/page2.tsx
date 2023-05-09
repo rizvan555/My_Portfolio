@@ -1,4 +1,4 @@
-import React, { lazy, useState } from 'react';
+import React from 'react';
 import codingMan from '../resource/images/codingMan.jpg';
 import 'animate.css';
 import de from '../components/de.json';
