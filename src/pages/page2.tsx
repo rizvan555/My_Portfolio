@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { lazy, useState } from 'react';
 import codingMan from '../resource/images/codingMan.jpg';
 import 'animate.css';
+import de from '../components/de.json';
+import eng from '../components/eng.json';
 
-function Page2() {
+interface Page2Props {
+  language: boolean;
+  setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+function Page2({ language, setLanguage }: Page2Props) {
   const skills = [
     'Html',
     'Css',
@@ -17,7 +24,7 @@ function Page2() {
     'NodeJS',
     'Express',
     'Material UI',
-'WordPress',
+    'WordPress',
     'Git',
     'GitHub',
     'VSCode',
@@ -34,24 +41,22 @@ function Page2() {
     >
       <div className=" flex flex-col items-center text-center bg-slate-50 w-[70vw] px-8">
         <span className=" py-10 tracking-wider text-slate-800 font-bold">
-          ABOUT MYSELF
+          {language ? eng.aboutMySelfTitle : de.aboutMySelfTitle}
         </span>
         <h2 className=" text-2xl leading-extra-loose">
-          I am MERN full-stack developer, I have experience building web
-          applications using MongoDB, Express, React, and Node.js. I am
-          proficient in front-end development technologies such as HTML, CSS,
-          and JavaScript, and I have worked with popular frameworks and
-          libraries like React and Redux.
+          {language ? eng.aboutMySelf : de.aboutMySelf}
         </h2>
         <a
           className=" px-7 py-5 w- border m-10 tracking-wide font-bold  bg-slate-700 text-slate-50 text-m hvr-sweep-to-right animate__animated animate__fadeInLeft"
           download="Lebenslauf.pdf"
           href="/Lebenslauf.pdf"
         >
-          DOWNLOAD RESUME
+          {language ? eng.downloadButton : de.downloadButton}
         </a>
         <div className=" border border-slate-600 w-[60vw]" />
-        <span className=" py-4 font-bold tracking-wide text-xl">Skills</span>
+        <span className=" py-4 font-bold tracking-wide text-xl">
+          {language ? eng.skills : de.skills}
+        </span>
         <ul className="flex justify-center gap-4 w-[60vw] flex-wrap py-7">
           {skills.map((skill, index) => {
             return (
@@ -65,9 +70,7 @@ function Page2() {
           })}
         </ul>
         <p className="w-[60vw] py-5">
-          I am also experienced in back-end development with Node.js and have
-          worked with various APIs and databases to build scalable and robust
-          applications.
+          {language ? eng.infoBottom1 : de.infoBottom1}
         </p>
       </div>
     </section>
