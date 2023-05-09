@@ -7,5 +7,69 @@
   "aboutMySelf": " I am MERN full-stack developer, I have experience building web applications using MongoDB, Express, React, and Node.js. I am proficient in front-end development technologies such as HTML, CSS, and JavaScript, and I have worked with popular frameworks and libraries like React Redux.",
   "downloadButton": "DOWNLOAD RESUME",
   "skills": "Skills",
-  "infoBottom1": "I am also experienced in back-end development with Node.js and have worked with various APIs and databases to build scalable and robust applications."
+  "infoBottom1": "I am also experienced in back-end development with Node.js and have worked with various APIs and databases to build scalable and robust applications.",
+  "languagesTitle": "Languages",
+  "languages": ["German", "English", "Turkish", "Russian", "Azerbaijani"],
+  "languageContain": {
+    "German": "Although I haven't lived in Germany for long, I know the German language and culture inside out and am trying to fully integrate. Accordingly, I started integration courses immediately after my arrival and after some time successfully completed them with a C1 language certificate.",
+    "English": "Because I have lived in China and Dubai for a while and I have used English in my work experience, I have English language experience. I can freely express my thoughts in English and I can understand the person I am communicating with.",
+    "Turkish": "I can speak, write, read and understand Turkish in a grammatically correct way.",
+    "Russian": "Since I received my secondary education in Russian language, I can write, read, understand and speak in Russian in a grammatically correct way.",
+    "Azerbaijani": "Azerbaijani is my mother tongue and I can speak and understand it freely."
+  },
+  "experianceTitle": "Experiance",
+  "experiances": [
+    {
+      "title": "Production Developer",
+      "company": "IK Hofmann GmbH",
+      "date": "November 2021 -  December 2022",
+      "contain": "I was responsible for ensuring the safe acceptance of containers, their inspection by me after being filled by other employees, and their proper placement to the appropriate locations at BASF, the largest chemical company. I worked with great attention to detail in these tasks and took all necessary precautions to ensure that the job was done correctly. I was meticulous in ensuring that the containers were properly labeled, marked, and stored or transported in a manner that prevented damage to the products.  In addition, I worked closely with my colleagues to ensure that the job was completed on time and without any issues. I always took care to protect the satisfaction of customers and the reputation of the company"
+    },
+    {
+      "title": "Logistic planner",
+      "company": "Syncreon GmbH",
+      "date": "March 2020 - October 2021",
+      "contain": "One of my job responsibilities has been ensuring the proper management of logistics and ensuring timely, safe, and proper placement of goods for clients of any logistics company. This includes ensuring that containers and shipments are properly filled and that they are received and placed in accordance with the requirements of users.Overall, my work experience in this role has allowed me to develop my skills in logistics management, including the organization and safe handling of goods, as well as ensuring timely and effective delivery of shipments."
+    },
+    {
+      "title": "Front End Developer",
+      "company": "Farkhadov LLC & Trans Broker MMC",
+      "date": "October 2006 - September 2015",
+      "contain": "During my tenure from 2006 to 2015, I had the opportunity to work as a Frontend Developer in various joint projects with Farkhadov LLC and Transbroker LLC. My role involved utilizing my expertise in HTML, CSS, JavaScript, and MySQL that I had acquired during my university studies. I was able to further develop these skills in a professional setting, working on diverse projects.As part of my responsibilities, I was responsible for monitoring the websites of various government agencies and private companies. This included ensuring the proper functioning of webpages, as well as managing and organizing the necessary data. I was also tasked with updating outdated information with the latest data to ensure that users had access to the most up-to-date information.Overall, my experience working in this role allowed me to hone my technical skills, learn to work collaboratively with colleagues, and develop an understanding of how to manage and maintain websites effectively."
+    }
+  ],
+  "myInfo": "Although I have experience in frontend development, I am not satisfied with just that. I constantly work on improving myself and keeping up with new technologies, frameworks, and all the latest developments in web technologies. Currently, I am diving deeper into the MERN stack alongside frontend development. My goal is to acquire more knowledge in the shortest possible time and apply this knowledge in my work to provide more value to the companies I work for. To achieve this goal, I am always striving to improve my learning process and dedicate time to staying up-to-date with the latest technologies. While learning about new developments, I also work to keep my current knowledge up-to-date. In particular, I am focusing on the MERN stack for backend development, with the aim of becoming an expert in full-stack development. This way, I can seamlessly work on both the frontend and backend of any project.",
+  "educationExperiances": [
+    {
+      "uniName": "SuperCode GmbH & Co. KG ",
+      "title": "Full Stack Development",
+      "date": "01/2023 - 07/2023",
+      "contain": "HTML5, CSS, SASS, Bootstrap, JavaScript, Git-Github, React JS, Node JS, Express JS, Mongo DB, Trello, VS Code, Figma"
+    },
+    {
+      "uniName": "Baku Business University",
+      "title": "Business Informatics (Finans & Credit)",
+      "date": "09/2001 - 07/2005",
+      "contain": " The planning, development and implementation of IT systems to support business processes / the analysis and optimization of business processes through the use of IT / the implementation and integration of software solutions in companies / basics of business administration such as corporate management, accounting, marketing and human resources / methods and Techniques of data analysis and data processing / project management and teamwork"
+    }
+  ],
+  "educationTitle": "Education",
+  "inputContainer": [
+    {
+      "type": "text",
+      "placheholder": "Your Name"
+    },
+    {
+      "type": "email",
+      "placheholder": "Email"
+    },
+    {
+      "type": "text",
+      "placheholder": "Subject"
+    }
+  ],
+  "footerTitle": "DROP A LINE",
+  "messageButton":"SEND MESSAGE",
+  "contactMe":"CONTACT ME",
+  "downloadButton":"DOWNLOAD RESUME"
 }
