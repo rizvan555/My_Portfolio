@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Footer from './pages/footer';
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
@@ -14,11 +14,11 @@ function App() {
     <div>
       <Page1 language={language} setLanguage={setLanguage} />
       <Page2 language={language} setLanguage={setLanguage} />
-      <Page3 />
-      <Page4 />
-      <Page5 />
-      <Page6 />
-      <Footer />
+      <Page3 language={language} setLanguage={setLanguage} />
+      <Page4 language={language} setLanguage={setLanguage} />
+      <Page5 language={language} setLanguage={setLanguage} />
+      <Page6 language={language} setLanguage={setLanguage} />
+      <Footer language={language} setLanguage={setLanguage} />
     </div>
   );
 }
