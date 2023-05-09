@@ -1,41 +1,41 @@
-import React from 'react';
-import codingMan from '../resource/images/codingMan.jpg';
-import 'animate.css';
-import de from '../components/de.json';
-import eng from '../components/eng.json';
+import React from "react";
+import codingMan from "../resource/images/codingMan.jpg";
+import "animate.css";
+import de from "../components/de.json";
+import eng from "../components/eng.json";
 
 interface Page2Props {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function Page2({ language, setLanguage }: Page2Props) {
+function Page2({ language }: Page2Props) {
   const skills = [
-    'Html',
-    'Css',
-    'Grid',
-    'Tailwind',
-    'Bootstrap',
-    'JavaScript',
-    'TypeScript',
-    'ReactJS',
-    'NextJS',
-    'Material UI',
-    'NodeJS',
-    'Express',
-    'Material UI',
-    'WordPress',
-    'Git',
-    'GitHub',
-    'VSCode',
-    'Figma',
+    "Html",
+    "Css",
+    "Grid",
+    "Tailwind",
+    "Bootstrap",
+    "JavaScript",
+    "TypeScript",
+    "ReactJS",
+    "NextJS",
+    "Material UI",
+    "NodeJS",
+    "Express",
+    "Material UI",
+    "WordPress",
+    "Git",
+    "GitHub",
+    "VSCode",
+    "Figma",
   ];
   return (
     <section
       style={{
         backgroundImage: `url(${codingMan})`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
+        backgroundPosition: "center",
+        backgroundSize: "cover",
       }}
       className=" flex justify-center items-center py-16"
     >
