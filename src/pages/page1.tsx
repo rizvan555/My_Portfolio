@@ -1,6 +1,6 @@
-import myPhoto5 from '../resource/images/myPhoto5.png';
-import de from '../components/de.json';
-import eng from '../components/eng.json';
+import myPhoto5 from "../resource/images/myPhoto5.png";
+import de from "../components/de.json";
+import eng from "../components/eng.json";
 
 interface Page1Props {
   language: boolean;
@@ -16,28 +16,27 @@ function Page1({ language, setLanguage }: Page1Props) {
     <div
       style={{
         backgroundImage: `url(${myPhoto5})`,
-        backgroundPosition: ' 100% 100%',
-        backgroundSize: '50vw',
-        backgroundRepeat: 'no-repeat',
+        backgroundPosition: " 100% 100%",
+        backgroundSize: "50vw",
+        backgroundRepeat: "no-repeat",
       }}
       className="h-[100vh] bg-slate-700 z-0 text-slate-200/70"
     >
-      <button onClick={() => setLanguage(!language)}>Language</button>
-      <header className="flex justify-between px-8 py-5 border border-slate-700">
+      <header className="flex justify-between px-12 py-5 border border-slate-700">
         <h2
           className=" font-bold text-2xl text-slate-200/100 animate__animated animate__jackInTheBox"
           style={{
-            animationIterationCount: 'infinite',
-            animationDuration: '3s',
+            animationIterationCount: "infinite",
+            animationDuration: "3s",
           }}
         >
           Rizvan K.
         </h2>
-        <nav>
+        <nav className="flex items-center gap-8">
           <ul className="flex gap-14 cursor-pointer animate__animated animate__lightSpeedInRight ">
             {language
               ? eng.navbar.map((nav, index) => {
-                  if (nav === 'About') {
+                  if (nav === "About") {
                     return (
                       <li
                         key={index}
@@ -59,7 +58,7 @@ function Page1({ language, setLanguage }: Page1Props) {
                   }
                 })
               : de.navbar.map((nav, index) => {
-                  if (nav === 'About') {
+                  if (nav === "About") {
                     return (
                       <li
                         key={index}
@@ -81,13 +80,22 @@ function Page1({ language, setLanguage }: Page1Props) {
                   }
                 })}
           </ul>
+
+          <select
+            value={language ? "EN" : "DE"}
+            onChange={() => setLanguage(!language)}
+            className=" text-slate-500 bg-slate-300 w-20 rounded-full"
+          >
+            <option value="EN">EN 🇺🇸</option>
+            <option value="DE">DE 🇩🇪</option>
+          </select>
         </nav>
       </header>
       <main className=" flex">
         <section className=" w-[50vw] mt-56 ml-24">
           <h1
             className=" text-6xl mb-8 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap"
-            style={{ animationDuration: '2s' }}
+            style={{ animationDuration: "2s" }}
           >
             {language ? eng.title : de.title}
           </h1>

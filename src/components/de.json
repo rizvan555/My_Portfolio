@@ -13,5 +13,76 @@
   "aboutMySelf": "Ich bin MERN-Full-Stack-Entwickler und habe Erfahrung beim Erstellen von Webanwendungen mit MongoDB, Express, React und Node.js. Ich beherrsche Front-End-Entwicklungstechnologien wie HTML, CSS und JavaScript und habe mit beliebten Frameworks und Bibliotheken wie React Redux gearbeitet.",
   "downloadButton": "MEIN LEBENSLAUF",
   "skills": "Fähigkeiten",
-  "infoBottom1": "Ich habe auch Erfahrung in der Backend-Entwicklung mit Node.js und habe mit verschiedenen APIs und Datenbanken gearbeitet, um skalierbare und robuste Anwendungen zu erstellen."
+  "infoBottom1": "Ich habe auch Erfahrung in der Backend-Entwicklung mit Node.js und habe mit verschiedenen APIs und Datenbanken gearbeitet, um skalierbare und robuste Anwendungen zu erstellen.",
+  "languages": [
+    "Deutsch",
+    "Englisch",
+    "Turkisch",
+    "Russisch",
+    "Aserbaidschanisch"
+  ],
+  "languagesTitle": "Sprache",
+  "languageContain": {
+    "Deutsch": "Obwohl ich noch nicht lange in Deutschland lebe, kenne ich die deutsche Sprache und Kultur in- und auswendig und versuche mich voll zu integrieren. Dementsprechend habe ich direkt nach meiner Ankunft mit Integrationskursen begonnen und diese nach einiger Zeit mit einem C1-Sprachzertifikat erfolgreich abgeschlossen",
+    "Englisch": "Weil ich eine Zeit lang in China und Dubai gelebt und Englisch in meiner Arbeitserfahrung verwendet habe, habe ich Erfahrung mit der englischen Sprache. Ich kann meine Gedanken auf Englisch frei ausdrücken und ich kann die Person verstehen, mit der ich kommuniziere.",
+    "Turkisch": "Ich kann Türkisch grammatikalisch korrekt sprechen, schreiben, lesen und verstehen.",
+    "Russisch": "Da ich meine Sekundarschulbildung in russischer Sprache erhalten habe, kann ich grammatikalisch korrekt auf Russisch schreiben, lesen, verstehen und sprechen.",
+    "Azerbaidschanisch": "Aserbaidschanisch ist meine Muttersprache und ich kann es frei sprechen und verstehen."
+  },
+  "experianceTitle": "Erfahrung",
+  "experiances": [
+    {
+      "title": "Productionsentwickler",
+      "company": "IK Hofmann GmbH",
+      "date": "November 2021 -  Dezember 2022",
+      "contain": "Ich war verantwortlich für die sichere Annahme von Containern, deren Inspektion durch mich nach der Befüllung durch andere Mitarbeiter und deren ordnungsgemäße Platzierung an den entsprechenden Standorten bei BASF, dem größten Chemieunternehmen. Ich habe bei diesen Aufgaben mit viel Liebe zum Detail gearbeitet und alle notwendigen Vorkehrungen getroffen, um sicherzustellen, dass die Arbeit korrekt ausgeführt wurde. Ich habe sorgfältig darauf geachtet, dass die Behälter ordnungsgemäß etikettiert, gekennzeichnet und so gelagert oder transportiert wurden, dass Schäden an den Produkten vermieden wurden. Darüber hinaus habe ich eng mit meinen Kollegen zusammengearbeitet, um sicherzustellen, dass der Auftrag pünktlich und ohne Probleme abgeschlossen wurde. Ich habe immer darauf geachtet, die Zufriedenheit der Kunden und den Ruf des Unternehmens zu schützen"
+    },
+    {
+      "title": "Logistikplaner",
+      "company": "Syncreon GmbH",
+      "date": "März 2020 - Oktober 2021",
+      "contain": "Eine meiner Aufgaben war es, die ordnungsgemäße Verwaltung der Logistik sicherzustellen und die rechtzeitige, sichere und ordnungsgemäße Platzierung von Waren für Kunden aller Logistikunternehmen sicherzustellen. Dazu gehört, sicherzustellen, dass Container und Sendungen ordnungsgemäß gefüllt und gemäß den Anforderungen der Benutzer empfangen und platziert werden. Insgesamt hat mir meine Berufserfahrung in dieser Rolle ermöglicht, meine Fähigkeiten im Logistikmanagement, einschließlich der Organisation und sicheren Handhabung, zu entwickeln von Waren sowie die Gewährleistung einer rechtzeitigen und effektiven Lieferung von Sendungen."
+    },
+    {
+      "title": "Front End Entwickler",
+      "company": "Farkhadov LLC & Trans Broker MMC",
+      "date": "Oktober 2006 - September 2015",
+      "contain": "Während meiner Tätigkeit von 2006 bis 2015 hatte ich die Möglichkeit, als Frontend-Entwickler in verschiedenen gemeinsamen Projekten mit Farkhadov LLC und Transbroker LLC zu arbeiten. Meine Rolle bestand darin, meine während meines Studiums erworbene Expertise in HTML, CSS, JavaScript und MySQL einzusetzen. Diese Fähigkeiten konnte ich beruflich in diversen Projekten weiterentwickeln. Im Rahmen meiner Aufgaben war ich für die Betreuung der Websites verschiedener Behörden und privater Unternehmen verantwortlich. Dazu gehörte die Sicherstellung des ordnungsgemäßen Funktionierens der Webseiten sowie die Verwaltung und Organisation der erforderlichen Daten. Ich hatte auch die Aufgabe, veraltete Informationen mit den neuesten Daten zu aktualisieren, um sicherzustellen, dass die Benutzer Zugriff auf die aktuellsten Informationen hatten. Insgesamt ermöglichte mir meine Erfahrung in dieser Rolle, meine technischen Fähigkeiten zu verbessern und zu lernen, mit Kollegen zusammenzuarbeiten , und entwickeln Sie ein Verständnis für die effektive Verwaltung und Pflege von Websites."
+    }
+  ],
+  "myInfo": "Obwohl ich Erfahrung in der Frontend-Entwicklung habe, gebe ich mich damit nicht zufrieden. Ich arbeite ständig daran, mich zu verbessern und mit neuen Technologien, Frameworks und den neuesten Entwicklungen in Webtechnologien Schritt zu halten. Derzeit tauche ich neben der Frontend-Entwicklung tiefer in den MERN-Stack ein. Mein Ziel ist es, in kürzester Zeit mehr Wissen zu erwerben und dieses Wissen in meiner Arbeit anzuwenden, um den Unternehmen, für die ich arbeite, einen Mehrwert zu bieten. Um dieses Ziel zu erreichen, bin ich stets bestrebt, meinen Lernprozess zu verbessern und Zeit zu investieren, um mit den neuesten Technologien auf dem Laufenden zu bleiben. Während ich mich über neue Entwicklungen informiere, arbeite ich auch daran, mein aktuelles Wissen auf dem neuesten Stand zu halten. Insbesondere konzentriere ich mich auf den MERN-Stack für die Backend-Entwicklung, mit dem Ziel, Experte für Full-Stack-Entwicklung zu werden. Auf diese Weise kann ich nahtlos sowohl am Frontend als auch am Backend jedes Projekts arbeiten.",
+  "educationExperiances": [
+    {
+      "uniName": "SuperCode GmbH & Co. KG ",
+      "title": "Full Stack Entwicklung",
+      "date": "01/2023 - 07/2023",
+      "contain": "HTML5, CSS, SASS, Bootstrap, JavaScript, Git-Github, React JS, Node JS, Express JS, Mongo DB, Trello, VS Code, Figma"
+    },
+    {
+      "uniName": "Baku Business University",
+      "title": "Wirtschaftsinformatik (Finans & Kredit)",
+      "date": "09/2001 - 07/2005",
+      "contain": " Die Planung-Entwicklung und Umsetzung von IT-Systemen zur Unterstützung von Geschäftsprozessen / Die Analyse und Optimierung von Geschäftsprozessen durch den Einsatz von IT / Die Implementierung und Integration von Softwarelösungen in Unternehmen / Grundlagender Betriebswirtschaftslehre wie beispielsweise  Unternehmensführung, Rechnungswesen, Marketing und Personalwesen / Methoden und Techniken der Datenanalyse und Datenverarbeitung / Projektmanagement und Teamarbeit"
+    }
+  ],
+  "educationTitle": "Ausbildung",
+  "inputContainer": [
+    {
+      "type": "text",
+      "placheholder": "Name"
+    },
+    {
+      "type": "email",
+      "placheholder": "Email"
+    },
+    {
+      "type": "text",
+      "placheholder": "Thema"
+    }
+  ],
+  "footerTitle": "LASSEN SIE EINE LINIE",
+  "messageButton": "NACHRICHT SENDEN",
+  "contactMe": "KONTAKTIERE MICH",
+  "downloadButton":"LEBENSLAUF HERUNTERLADEN"
+
 }
