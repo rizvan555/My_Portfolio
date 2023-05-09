@@ -8,21 +8,6 @@ interface FooterProps {
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
 }
 function Footer({ language }: FooterProps) {
-  const inputContainer = [
-    {
-      type: "text",
-      placheholder: "Your Name",
-    },
-    {
-      type: "email",
-      placheholder: "Email",
-    },
-    {
-      type: "text",
-      placheholder: "Subject",
-    },
-  ];
-
   return (
     <div className="flex justify-center bg-slate-700 h-[100vh] p-6 flex-col">
       <main className="flex justify-around">
