@@ -99,7 +99,7 @@ function Page1({ language, setLanguage }: Page1Props) {
           >
             {language ? eng.title : de.title}
           </h1>
-          <h4 className=" mb-12 text-lg font-light tracking-wide">
+          <h4 className=" mb-11 text-lg font-light tracking-wide">
             {language ? eng.subtitle : de.subtitle}
           </h4>
           <button className=" border border-slate-500/60 w-36 p-4 text-xs font-bold hvr-outline-in">
