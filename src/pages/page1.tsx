@@ -1,8 +1,14 @@
 import myPhoto5 from '../resource/images/myPhoto5.png';
+import de from '../components/de.json';
+import eng from '../components/eng.json';
+import { useState } from 'react';
 
-function Page1() {
-  const navbar = ['Home', 'About', 'Projects', 'Contact', 'Fire me an Email'];
+interface Page1Props {
+  language: boolean;
+  setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
+function Page1({ language, setLanguage }: Page1Props) {
   const handleScroll = () => {
     window.scroll(0, 720);
   };
@@ -17,6 +23,7 @@ function Page1() {
       }}
       className="h-[100vh] bg-slate-700 z-0 text-slate-200/70"
     >
+      <button onClick={() => setLanguage(!language)}>Language</button>
       <header className="flex justify-between px-8 py-5 border border-slate-700">
         <h2
           className=" font-bold text-2xl text-slate-200/100 animate__animated animate__jackInTheBox"
@@ -29,24 +36,51 @@ function Page1() {
         </h2>
         <nav>
           <ul className="flex gap-14 cursor-pointer animate__animated animate__lightSpeedInRight ">
-            {navbar.map((nav) => {
-              if (nav === 'About') {
-                return (
-                  <li
-                    className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
-                    onClick={handleScroll}
-                  >
-                    {nav}
-                  </li>
-                );
-              } else {
-                return (
-                  <li className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white ">
-                    {nav}
-                  </li>
-                );
-              }
-            })}
+            {language
+              ? eng.navbar.map((nav, index) => {
+                  if (nav === 'About') {
+                    return (
+                      <li
+                        key={index}
+                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
+                        onClick={handleScroll}
+                      >
+                        {nav}
+                      </li>
+                    );
+                  } else {
+                    return (
+                      <li
+                        key={index}
+                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white "
+                      >
+                        {nav}
+                      </li>
+                    );
+                  }
+                })
+              : de.navbar.map((nav, index) => {
+                  if (nav === 'About') {
+                    return (
+                      <li
+                        key={index}
+                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
+                        onClick={handleScroll}
+                      >
+                        {nav}
+                      </li>
+                    );
+                  } else {
+                    return (
+                      <li
+                        key={index}
+                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white "
+                      >
+                        {nav}
+                      </li>
+                    );
+                  }
+                })}
           </ul>
         </nav>
       </header>
@@ -56,14 +90,13 @@ function Page1() {
             className=" text-6xl mb-8 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap"
             style={{ animationDuration: '2s' }}
           >
-            Full Stack Developer
+            {language ? eng.title : de.title}
           </h1>
           <h4 className=" mb-12 text-lg font-light tracking-wide">
-            I'm a MERN full stack developer with a passion for web development.
-            I'm dedicated to constantly learning and improving my skills.
+            {language ? eng.subtitle : de.subtitle}
           </h4>
           <button className=" border border-slate-500/60 w-36 p-4 text-xs font-bold hvr-outline-in">
-            HIRE ME
+            {language ? eng.hireBtnText : de.hireBtnText}
           </button>
         </section>
       </main>
