@@ -1,7 +1,6 @@
 import myPhoto5 from '../resource/images/myPhoto5.png';
 import de from '../components/de.json';
 import eng from '../components/eng.json';
-import { useState } from 'react';
 
 interface Page1Props {
   language: boolean;
