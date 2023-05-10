@@ -44,7 +44,7 @@ function Footer({ language }: FooterProps) {
             rows={4}
           ></textarea>
 
-          <button className=" w-[20vw] p-4 text-slate-900 bg-slate-50 font-bold hvr-radial-out border">
+          <button className=" w-[20vw] p-5 text-slate-900 bg-slate-50 font-bold hvr-radial-out border">
             {language ? eng.messageButton : de.messageButton}
           </button>
         </section>
