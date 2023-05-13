@@ -78,7 +78,7 @@ function Page1({ language, setLanguage }: Page1Props) {
                         {nav}
                       </li>
                     );
-                  } else if (nav === "Home") {
+                  } else if (nav === "Home" || nav === "Startseite") {
                     return (
                       <li
                         key={index}
@@ -125,6 +125,16 @@ function Page1({ language, setLanguage }: Page1Props) {
                         {nav}
                       </li>
                     );
+                  } else if (nav === "Home" || nav === "Startseite") {
+                    return (
+                      <li
+                        key={index}
+                        className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
+                        onClick={handleScrollHome}
+                      >
+                        {nav}
+                      </li>
+                    );
                   } else {
                     return (
                       <li
@@ -149,19 +159,19 @@ function Page1({ language, setLanguage }: Page1Props) {
         </nav>
       </header>
       <main className=" flex">
-        <section className=" w-[50vw] mt-56 ml-24 font-[Neuemachina,sans-serif]">
+        <section className=" w-[50vw] mt-[38vh] ml-24 font-[Neuemachina,sans-serif]">
           <h1
             className=" text-6xl mb-8 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap"
             style={{ animationDuration: "2s" }}
           >
             {language ? eng.title : de.title}
           </h1>
-          <h4 className=" mb-11 text-lg font-light tracking-wide">
+          <h4 className=" mb-11 text-lg font-light tracking-wide w-[45vw]">
             {language ? eng.subtitle : de.subtitle}
           </h4>
-          <button className=" border border-slate-500/60 w-36 p-4 text-xs font-bold hvr-outline-in">
+          {/* <button className=" border border-slate-500/60 w-36 p-4 text-xs font-bold hvr-outline-in">
             {language ? eng.hireBtnText : de.hireBtnText}
-          </button>
+          </button> */}
         </section>
       </main>
     </div>
