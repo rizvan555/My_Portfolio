@@ -9,7 +9,6 @@ interface Page4Props {
 }
 
 function Page4({ language }: Page4Props) {
-<<<<<<< HEAD
   const experiances = [
     {
       title: "Productionsentwickler",
@@ -33,9 +32,7 @@ function Page4({ language }: Page4Props) {
         "During my tenure from 2006 to 2015, I had the opportunity to work as a Frontend Developer in various joint projects with Farkhadov LLC and Transbroker LLC. My role involved utilizing my expertise in HTML, CSS, JavaScript, and MySQL that I had acquired during my university studies. I was able to further develop these skills in a professional setting, working on diverse projects.As part of my responsibilities, I was responsible for monitoring the websites of various government agencies and private companies. This included ensuring the proper functioning of webpages, as well as managing and organizing the necessary data. I was also tasked with updating outdated information with the latest data to ensure that users had access to the most up-to-date information.Overall, my experience working in this role allowed me to hone my technical skills, learn to work collaboratively with colleagues, and develop an understanding of how to manage and maintain websites effectively.",
     },
   ];
-=======
-  
->>>>>>> 8d73a70fc18aca7b89dea10da0170e9fc24272e1
+
   return (
     <div>
       <header className="flex justify-start py-16 px-20">
