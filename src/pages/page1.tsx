@@ -8,6 +8,13 @@ interface Page1Props {
 }
 
 function Page1({ language, setLanguage }: Page1Props) {
+  const handleScrollHome = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const handleScrollAbout = () => {
     window.scrollTo({
       top: window.innerHeight,
@@ -30,11 +37,11 @@ function Page1({ language, setLanguage }: Page1Props) {
         backgroundSize: "50vw",
         backgroundRepeat: "no-repeat",
       }}
-      className="h-[100vh] bg-slate-700 z-0 text-slate-200/70"
+      className="h-[100vh] bg-slate-800 z-0 text-slate-200/70"
     >
-      <header className="flex justify-between px-12 py-5 border border-slate-700">
+      <header className="flex z-10 bg-slate-800 justify-between px-10 py-3 border border-slate-700 font-[Neuemachina,sans-serif] fixed min-w-full">
         <h2
-          className=" font-bold text-2xl text-slate-200/100 animate__animated animate__jackInTheBox"
+          className=" font-bold text-3xl text-slate-200/100 animate__animated animate__jackInTheBox tracking-wide"
           style={{
             animationIterationCount: "infinite",
             animationDuration: "3s",
@@ -42,7 +49,7 @@ function Page1({ language, setLanguage }: Page1Props) {
         >
           Rizvan K.
         </h2>
-        <nav className="flex items-center gap-8">
+        <nav className="flex items-center gap-8 text-[18px]">
           <ul className="flex gap-14 cursor-pointer animate__animated animate__lightSpeedInRight ">
             {language
               ? eng.navbar.map((nav, index) => {
@@ -50,7 +57,7 @@ function Page1({ language, setLanguage }: Page1Props) {
                     return (
                       <li
                         key={index}
-                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
+                        className=" hvr-outline-in pb-1 hover:text-white tracking-wide"
                         onClick={handleScrollAbout}
                       >
                         {nav}
@@ -65,8 +72,18 @@ function Page1({ language, setLanguage }: Page1Props) {
                     return (
                       <li
                         key={index}
-                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
+                        className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
                         onClick={handleScrollContact}
+                      >
+                        {nav}
+                      </li>
+                    );
+                  } else if (nav === "Home") {
+                    return (
+                      <li
+                        key={index}
+                        className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
+                        onClick={handleScrollHome}
                       >
                         {nav}
                       </li>
@@ -75,7 +92,7 @@ function Page1({ language, setLanguage }: Page1Props) {
                     return (
                       <li
                         key={index}
-                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white "
+                        className=" tracking-wide hvr-outline-in pb-1 hover:text-white "
                       >
                         {nav}
                       </li>
@@ -87,7 +104,7 @@ function Page1({ language, setLanguage }: Page1Props) {
                     return (
                       <li
                         key={index}
-                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
+                        className=" hvr-outline-in pb-1 hover:text-white tracking-wide"
                         onClick={handleScrollAbout}
                       >
                         {nav}
@@ -102,7 +119,7 @@ function Page1({ language, setLanguage }: Page1Props) {
                     return (
                       <li
                         key={index}
-                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
+                        className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
                         onClick={handleScrollContact}
                       >
                         {nav}
@@ -112,7 +129,7 @@ function Page1({ language, setLanguage }: Page1Props) {
                     return (
                       <li
                         key={index}
-                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white "
+                        className=" tracking-wide hvr-outline-in pb-1 hover:text-white "
                       >
                         {nav}
                       </li>
@@ -124,7 +141,7 @@ function Page1({ language, setLanguage }: Page1Props) {
           <select
             value={language ? "EN" : "DE"}
             onChange={() => setLanguage(!language)}
-            className=" text-slate-500 bg-slate-300 w-20 rounded-full"
+            className=" text-slate-500 bg-slate-300 w-20 rounded-full border-[#7cfc00]"
           >
             <option value="EN">EN 🇺🇸</option>
             <option value="DE">DE 🇩🇪</option>
@@ -132,7 +149,7 @@ function Page1({ language, setLanguage }: Page1Props) {
         </nav>
       </header>
       <main className=" flex">
-        <section className=" w-[50vw] mt-56 ml-24">
+        <section className=" w-[50vw] mt-56 ml-24 font-[Neuemachina,sans-serif]">
           <h1
             className=" text-6xl mb-8 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap"
             style={{ animationDuration: "2s" }}

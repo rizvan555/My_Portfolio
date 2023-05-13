@@ -17,7 +17,7 @@ function Page5({ language }: Page5Props) {
         backgroundSize: "45vw",
         backgroundRepeat: "no-repeat",
       }}
-      className="flex justify-between items-center bg-slate-700 py-36 mt-2"
+      className="flex justify-between items-center bg-slate-800 py-36 mt-2"
     >
       <section className="w-[40vw]"></section>
       <section className=" flex justify-between w-[50vw] pr-5 tracking-wide leading-extra-loose mt-6">

@@ -9,7 +9,7 @@ interface Page3Props {
 }
 
 function Page3({ language }: Page3Props) {
-  const [click, setClick] = useState("Deutsch");
+  const [click, setClick] = useState("German");
 
   function handleClick(language: any) {
     setClick(language);
@@ -28,7 +28,7 @@ function Page3({ language }: Page3Props) {
         </h2>
       </header>
       <main className=" flex justify-around p-6">
-        <div className=" w-[40vw] bg-slate-700">
+        <div className=" w-[40vw] bg-slate-800">
           <ul className=" flex flex-col justify-center items-center py-10 text-[#fff] text-3xl">
             {language
               ? eng.languages.map((language) => {

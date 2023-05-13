@@ -9,7 +9,7 @@ interface FooterProps {
 }
 function Footer({ language }: FooterProps) {
   return (
-    <div className="flex justify-center bg-slate-700 h-[100vh] p-6 flex-col">
+    <div className="flex justify-center bg-slate-800 h-[100vh] p-6 flex-col">
       <main className="flex justify-around">
         <section className="flex flex-col gap-7">
           <h3 className=" mt-19 text-slate-50 font-bold tracking-wider text-xl">
