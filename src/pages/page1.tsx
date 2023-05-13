@@ -60,7 +60,7 @@ function Page1({ language, setLanguage }: Page1Props) {
                     nav === "Contact" ||
                     nav === "Kontakt" ||
                     nav === "Fire me an Email" ||
-                    nav === "Schreib mir an email"
+                    nav === "Schreib mir eine E-Mail"
                   ) {
                     return (
                       <li
@@ -97,7 +97,7 @@ function Page1({ language, setLanguage }: Page1Props) {
                     nav === "Contact" ||
                     nav === "Kontakt" ||
                     nav === "Fire me an Email" ||
-                    nav === "Schreib mir an email"
+                    nav === "Schreib mir eine E-Mail"
                   ) {
                     return (
                       <li
