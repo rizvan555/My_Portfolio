@@ -31,9 +31,10 @@ function Page3({ language }: Page3Props) {
         <div className=" w-[40vw] bg-slate-800">
           <ul className=" flex flex-col justify-center items-center py-10 text-[#fff] text-3xl">
             {language
-              ? eng.languages.map((language) => {
+              ? eng.languages.map((language, index) => {
                   return (
                     <li
+                      key={index}
                       onClick={() => handleClick(language)}
                       className="mb-6 tracking-wider cursor-pointer font-serif text-slate-300 hover:text-[#fff] active:text-[#fff] hvr-underline-from-center pb-1"
                     >

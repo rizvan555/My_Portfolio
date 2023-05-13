@@ -21,9 +21,9 @@ function Page4({ language }: Page4Props) {
       </header>
       <main className="flex flex-col justify-center items-center gap-10">
         {language
-          ? eng.experiances.map((experiance) => {
+          ? eng.experiances.map((experiance, index) => {
               return (
-                <div className=" w-[60vw]">
+                <div className=" w-[60vw]" key={index}>
                   <h3 className="border-t-2 pt-8 text-3xl font-serif ">
                     {experiance.title}
                   </h3>
