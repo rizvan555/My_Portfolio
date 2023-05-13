@@ -2,6 +2,7 @@ import React from "react";
 import SocialMedia from "../components/socialMedia";
 import de from "../components/de.json";
 import eng from "../components/eng.json";
+<<<<<<< HEAD
 
 interface FooterProps {
   language: boolean;
@@ -22,7 +23,14 @@ function Footer({ language }: FooterProps) {
       placheholder: "Subject",
     },
   ];
+=======
+>>>>>>> 8d73a70fc18aca7b89dea10da0170e9fc24272e1
 
+interface FooterProps {
+  language: boolean;
+  setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
+}
+function Footer({ language }: FooterProps) {
   return (
     <div className="flex justify-center bg-slate-700 h-[100vh] p-6 flex-col">
       <main className="flex justify-around">
@@ -59,7 +67,11 @@ function Footer({ language }: FooterProps) {
             rows={4}
           ></textarea>
 
+<<<<<<< HEAD
           <button className=" w-[20vw] p-4 text-slate-900 bg-slate-50 font-bold hvr-radial-out border">
+=======
+          <button className=" w-[20vw] p-5 text-slate-900 bg-slate-50 font-bold hvr-radial-out border">
+>>>>>>> 8d73a70fc18aca7b89dea10da0170e9fc24272e1
             {language ? eng.messageButton : de.messageButton}
           </button>
         </section>
