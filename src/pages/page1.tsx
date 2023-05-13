@@ -8,9 +8,16 @@ interface Page1Props {
 }
 
 function Page1({ language, setLanguage }: Page1Props) {
-  const handleScroll = () => {
+  const handleScrollAbout = () => {
     window.scrollTo({
       top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
+
+  const handleScrollContact = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
       behavior: "smooth",
     });
   };
@@ -44,7 +51,22 @@ function Page1({ language, setLanguage }: Page1Props) {
                       <li
                         key={index}
                         className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
-                        onClick={handleScroll}
+                        onClick={handleScrollAbout}
+                      >
+                        {nav}
+                      </li>
+                    );
+                  } else if (
+                    nav === "Contact" ||
+                    nav === "Kontakt" ||
+                    nav === "Fire me an Email" ||
+                    nav === "Schreib mir an email"
+                  ) {
+                    return (
+                      <li
+                        key={index}
+                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
+                        onClick={handleScrollContact}
                       >
                         {nav}
                       </li>
@@ -61,12 +83,27 @@ function Page1({ language, setLanguage }: Page1Props) {
                   }
                 })
               : de.navbar.map((nav, index) => {
-                  if (nav === "About") {
+                  if (nav === "About" || nav === "Über mich") {
                     return (
                       <li
                         key={index}
                         className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
-                        onClick={handleScroll}
+                        onClick={handleScrollAbout}
+                      >
+                        {nav}
+                      </li>
+                    );
+                  } else if (
+                    nav === "Contact" ||
+                    nav === "Kontakt" ||
+                    nav === "Fire me an Email" ||
+                    nav === "Schreib mir an email"
+                  ) {
+                    return (
+                      <li
+                        key={index}
+                        className=" last-of-type:text-slate-200/90 hvr-outline-in pb-1 hover:text-white"
+                        onClick={handleScrollContact}
                       >
                         {nav}
                       </li>
