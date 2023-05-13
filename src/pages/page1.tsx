@@ -9,7 +9,10 @@ interface Page1Props {
 
 function Page1({ language, setLanguage }: Page1Props) {
   const handleScroll = () => {
-    window.scroll(0, 720);
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
   };
 
   return (
