@@ -6,7 +6,7 @@ import Page3 from "./pages/page3";
 import Page4 from "./pages/page4";
 import Page5 from "./pages/page5";
 import Page6 from "./pages/page6";
-
+import Projects from "./pages/projects";
 
 function App() {
   const [language, setLanguage] = useState(true);
@@ -19,6 +19,7 @@ function App() {
       <Page4 language={language} setLanguage={setLanguage} />
       <Page5 language={language} setLanguage={setLanguage} />
       <Page6 language={language} setLanguage={setLanguage} />
+      <Projects />
       <Footer language={language} setLanguage={setLanguage} />
     </div>
   );

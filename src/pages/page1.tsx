@@ -21,6 +21,18 @@ function Page1({ language, setLanguage }: Page1Props) {
       behavior: "smooth",
     });
   };
+  const handleScrollProjectsEng = () => {
+    window.scrollTo({
+      top: 5000,
+      behavior: "smooth",
+    });
+  };
+  const handleScrollProjectsde = () => {
+    window.scrollTo({
+      top: 5200,
+      behavior: "smooth",
+    });
+  };
 
   const handleScrollBlogEng = () => {
     window.scrollTo({
@@ -75,6 +87,16 @@ function Page1({ language, setLanguage }: Page1Props) {
                         {nav}
                       </li>
                     );
+                  } else if (nav === "Projects" || nav === "Projekte") {
+                    return (
+                      <li
+                        key={index}
+                        className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
+                        onClick={handleScrollProjectsEng}
+                      >
+                        {nav}
+                      </li>
+                    );
                   } else if (nav === "Blog") {
                     return (
                       <li
@@ -123,6 +145,16 @@ function Page1({ language, setLanguage }: Page1Props) {
                         key={index}
                         className=" hvr-outline-in pb-1 hover:text-white tracking-wide"
                         onClick={handleScrollAbout}
+                      >
+                        {nav}
+                      </li>
+                    );
+                  } else if (nav === "Projects" || nav === "Projekte") {
+                    return (
+                      <li
+                        key={index}
+                        className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
+                        onClick={handleScrollProjectsde}
                       >
                         {nav}
                       </li>
@@ -191,9 +223,6 @@ function Page1({ language, setLanguage }: Page1Props) {
           <h4 className=" mb-11 text-lg font-light tracking-wide w-[45vw]">
             {language ? eng.subtitle : de.subtitle}
           </h4>
-          {/* <button className=" border border-slate-500/60 w-36 p-4 text-xs font-bold hvr-outline-in">
-            {language ? eng.hireBtnText : de.hireBtnText}
-          </button> */}
         </section>
       </main>
     </div>

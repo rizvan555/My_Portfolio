@@ -17,7 +17,7 @@
   transition-duration: 0.4s;
 }
 .hvr-sweep-to-right:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 0;
@@ -61,7 +61,7 @@
   overflow: hidden;
 }
 .hvr-underline-from-center:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   left: 51%;
@@ -98,7 +98,7 @@
   transition-duration: 0.5s;
 }
 .hvr-bounce-to-right:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 0;
@@ -146,7 +146,7 @@
   transition-duration: 0.3s;
 }
 .hvr-shutter-out-vertical:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 0;
@@ -194,7 +194,7 @@
   transition-duration: 0.3s;
 }
 .hvr-radial-out:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 0;
@@ -241,7 +241,7 @@
   transition-duration: 0.3s;
 }
 .hvr-radial-in:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 0;
@@ -299,7 +299,7 @@
   position: relative;
 }
 .hvr-ripple-out:before {
-  content: '';
+  content: "";
   position: absolute;
   border: #7cfc00 solid 6px;
   top: 0;
@@ -344,7 +344,7 @@
   position: relative;
 }
 .hvr-outline-in:before {
-  content: '';
+  content: "";
   position: absolute;
 
   border: #7cfc00 solid 4px;
@@ -363,7 +363,25 @@
   animation-name: hvr-ripple-in;
 }
 
-
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 /* ========== Animations =============================== */
 
@@ -377,7 +395,6 @@
 
 .animate_animated.animate_jackInTheBox {
   --animate-duration: 3s;
- 
 }
 
 @layer utilities {
