@@ -22,6 +22,18 @@ function Page1({ language, setLanguage }: Page1Props) {
     });
   };
 
+  const handleScrollBlogEng = () => {
+    window.scrollTo({
+      top: 3500,
+      behavior: "smooth",
+    });
+  };
+  const handleScrollBlogDe = () => {
+    window.scrollTo({
+      top: 3630,
+      behavior: "smooth",
+    });
+  };
   const handleScrollContact = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
@@ -63,12 +75,17 @@ function Page1({ language, setLanguage }: Page1Props) {
                         {nav}
                       </li>
                     );
-                  } else if (
-                    nav === "Contact" ||
-                    nav === "Kontakt" ||
-                    nav === "Fire me an Email" ||
-                    nav === "Schreib mir eine E-Mail"
-                  ) {
+                  } else if (nav === "Blog") {
+                    return (
+                      <li
+                        key={index}
+                        className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
+                        onClick={handleScrollBlogEng}
+                      >
+                        {nav}
+                      </li>
+                    );
+                  } else if (nav === "Contact" || nav === "Kontakt") {
                     return (
                       <li
                         key={index}
@@ -110,12 +127,17 @@ function Page1({ language, setLanguage }: Page1Props) {
                         {nav}
                       </li>
                     );
-                  } else if (
-                    nav === "Contact" ||
-                    nav === "Kontakt" ||
-                    nav === "Fire me an Email" ||
-                    nav === "Schreib mir eine E-Mail"
-                  ) {
+                  } else if (nav === "Blog") {
+                    return (
+                      <li
+                        key={index}
+                        className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
+                        onClick={handleScrollBlogDe}
+                      >
+                        {nav}
+                      </li>
+                    );
+                  } else if (nav === "Contact" || nav === "Kontakt") {
                     return (
                       <li
                         key={index}

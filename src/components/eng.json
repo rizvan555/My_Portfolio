@@ -1,5 +1,5 @@
 {
-  "navbar": ["Home", "About", "Projects", "Contact", "Fire me an Email"],
+  "navbar": ["Home", "About", "Projects", "Blog", "Contact"],
   "title": "Full-Stack-Developer",
   "subtitle": "I'm a MERN full stack developer with a passion for web development.I'm dedicated to constantly learning and improving my skills.",
   "hireBtnText": "HIRE ME",
@@ -69,7 +69,7 @@
     }
   ],
   "footerTitle": "DROP A LINE",
-  "messageButton":"SEND MESSAGE",
-  "contactMe":"CONTACT ME",
-  "downloadButton":"DOWNLOAD RESUME"
+  "messageButton": "SEND MESSAGE",
+  "contactMe": "CONTACT ME",
+  "downloadButton": "DOWNLOAD RESUME"
 }
