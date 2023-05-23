@@ -2,9 +2,9 @@ import { useState } from "react";
 import portfolioImg from "../resource/images/portfolioImg.png";
 import tastyImg from "../resource/images/tastyImg.png";
 import BurgerApp from "../resource/images/BurgerApp.png";
-import drinkImg from "../resource/images/drinkImg.png";
+import woodies from "../resource/images/woodies.png";
 import pokemonImg from "../resource/images/pokemonImg.png";
-import birthdayImg from "../resource/images/birthdayimg.png";
+import countries from "../resource/images/countries.png";
 
 const Projects = () => {
   const [projects, setProjects] = useState([
@@ -24,9 +24,9 @@ const Projects = () => {
       projectImage: BurgerApp,
     },
     {
-      projectName: "Drink-App",
-      projectLink: "https://github.com/rizvan555/drink-app",
-      projectImage: portfolioImg,
+      projectName: "Woodies",
+      projectLink: "https://github.com/rizvan555/woodies-project-ts",
+      projectImage: woodies,
     },
     {
       projectName: "Pokemon",
@@ -34,25 +34,25 @@ const Projects = () => {
       projectImage: pokemonImg,
     },
     {
-      projectName: "Birthday-Reminder",
-      projectLink: "https://github.com/rizvan555/birthday-reminder",
-      projectImage: portfolioImg,
+      projectName: "Countries Wiki",
+      projectLink: "https://github.com/rizvan555/find-your-country",
+      projectImage: countries,
     },
   ]);
   return (
     <div className=" border-t-2">
       <h1 className="text-center text-5xl mt-6 mb-10">Projects</h1>
-      <div className=" grid grid-cols-3 gap-7 w-[95vw] mx-auto my-6 ">
+      <div className=" grid grid-cols-3 gap-7 w-[95vw] mx-auto my-10 ">
         {projects.map((project) => {
           return (
-            <ul className="border p-4 text-center rounded-md h-[50vh] hvr-grow-shadow">
+            <ul className="border p-4 text-center rounded-md h-[45vh] hvr-grow-shadow">
               <li className=" text-xl font-semibold">{project.projectName}</li>
               <li className=" text-sm my-4">
                 <span className=" text-sm font-semibold">GitHub:</span>
                 <a href={project.projectLink}> {project.projectLink}</a>
               </li>
               <img
-                className="border rounded-md h-[35vh]"
+                className="border rounded-md h-[30vh]"
                 src={project.projectImage}
                 alt={project.projectImage}
               />
