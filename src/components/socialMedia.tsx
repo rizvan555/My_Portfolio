@@ -38,7 +38,7 @@ function SocialMedia() {
             <a
               key={index}
               href={media.link}
-              className=" w-12 h-12 bg-slate-500 flex items-center justify-center rounded-full hvr-wobble-top hover:bg-[#7CFC00]"
+              className=" w-12 h-12 bg-slate-500 flex items-center justify-center rounded-full hvr-wobble-top hover:bg-[#cd69f4]"
             >
               {media.icon}
             </a>

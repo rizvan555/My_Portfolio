@@ -41,14 +41,14 @@ function Page2({ language }: Page2Props) {
       className=" flex justify-center items-center py-16"
     >
       <div className=" flex flex-col items-center text-center bg-slate-50 w-[70vw] px-8">
-        <span className=" py-10 tracking-wider text-slate-800 font-bold">
+        <span className=" py-10 tracking-wider text-slate-800 font-bold text-2xl">
           {language ? eng.aboutMySelfTitle : de.aboutMySelfTitle}
         </span>
         <h2 className=" text-2xl leading-extra-loose">
           {language ? eng.aboutMySelf : de.aboutMySelf}
         </h2>
         <a
-          className=" px-7 py-5 w- border m-10 tracking-wide font-bold  bg-[#100c18] text-slate-50 text-m hvr-sweep-to-right animate__animated animate__fadeInLeft"
+          className=" px-7 py-5 border m-10 tracking-wide font-bold  bg-[#100c18] text-slate-50 text-m hvr-sweep-to-right animate__animated animate__fadeInLeft"
           download="Lebenslauf.pdf"
           href="/Lebenslauf.pdf"
         >
@@ -63,7 +63,7 @@ function Page2({ language }: Page2Props) {
             return (
               <li
                 key={index}
-                className=" w-[10vw] hvr-shutter-out-vertical cursor-pointer hover:font-bold"
+                className=" w-[10vw] p-2 hvr-shutter-out-vertical transition-all cursor-pointer hover:font-bold"
               >
                 {skill}
               </li>

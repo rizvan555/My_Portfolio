@@ -5,6 +5,7 @@ import BurgerApp from "../resource/images/BurgerApp.png";
 import woodies from "../resource/images/woodies.png";
 import pokemonImg from "../resource/images/pokemonImg.png";
 import countries from "../resource/images/countries.png";
+import { AiOutlineGithub } from "react-icons/ai";
 
 const Projects = () => {
   const [projects] = useState([
@@ -50,8 +51,11 @@ const Projects = () => {
             <ul className=" p-4 text-center rounded-md h-[45vh]  bg-transparent myBox opacity-70">
               <li className=" text-xl font-semibold">{project.projectName}</li>
               <li className=" text-sm my-4">
-                <span className=" text-sm font-semibold">GitHub:</span>
-                <a href={project.projectLink}> {project.projectLink}</a>
+                <button className=" text-sm bg-[#921de0] font-semibold mx-auto rounded-sm flex items-center gap-2 px-4 py-2">
+                  <AiOutlineGithub />
+                  GitHub
+                </button>
+                <a href={project.projectLink}></a>
               </li>
               <img
                 className="border rounded-md w-[42vw] h-[30vh]"
