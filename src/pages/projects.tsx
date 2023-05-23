@@ -1,7 +1,7 @@
 import { useState } from "react";
 import portfolioImg from "../resource/images/portfolioImg.png";
 import tastyImg from "../resource/images/tastyImg.png";
-import burgerImg from "../resource/images/burgerImg.png";
+import BurgerApp from "../resource/images/BurgerApp.png";
 import drinkImg from "../resource/images/drinkImg.png";
 import pokemonImg from "../resource/images/pokemonImg.png";
 import birthdayImg from "../resource/images/birthdayimg.png";
@@ -20,8 +20,8 @@ const Projects = () => {
     },
     {
       projectName: "Burger-App",
-      projectLink: "https://github.com/rizvan555/Burger-App",
-      projectImage: portfolioImg,
+      projectLink: "https://github.com/rizvan555/my-burger-app",
+      projectImage: BurgerApp,
     },
     {
       projectName: "Drink-App",
@@ -45,7 +45,7 @@ const Projects = () => {
       <div className=" grid grid-cols-3 gap-7 w-[95vw] mx-auto my-6 ">
         {projects.map((project) => {
           return (
-            <ul className="border p-4 text-center rounded-md h-[50vh] hvr-grow-shadow ">
+            <ul className="border p-4 text-center rounded-md h-[50vh] hvr-grow-shadow">
               <li className=" text-xl font-semibold">{project.projectName}</li>
               <li className=" text-sm my-4">
                 <span className=" text-sm font-semibold">GitHub:</span>

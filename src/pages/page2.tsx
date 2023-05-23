@@ -23,6 +23,7 @@ function Page2({ language }: Page2Props) {
     "Material UI",
     "NodeJS",
     "Express",
+    "MongoDB",
     "Material UI",
     "WordPress",
     "Git",
