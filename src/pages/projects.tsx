@@ -41,7 +41,9 @@ const Projects = () => {
   ]);
   return (
     <div className=" border-t-2">
-      <h1 className="text-center text-5xl mt-6 mb-10">Projects</h1>
+      <h1 className="text-start text-5xl my-20 mx-20 font-serif font-bold">
+        Projects
+      </h1>
       <div className=" grid grid-cols-3 gap-7 w-[95vw] mx-auto my-10 ">
         {projects.map((project) => {
           return (
@@ -52,7 +54,7 @@ const Projects = () => {
                 <a href={project.projectLink}> {project.projectLink}</a>
               </li>
               <img
-                className="border rounded-md h-[30vh]"
+                className="border rounded-md w-[42vw] h-[30vh]"
                 src={project.projectImage}
                 alt={project.projectImage}
               />
