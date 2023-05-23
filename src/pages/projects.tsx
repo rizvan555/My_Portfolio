@@ -7,7 +7,7 @@ import pokemonImg from "../resource/images/pokemonImg.png";
 import countries from "../resource/images/countries.png";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       projectName: "Portfolio",
       projectLink: "https://github.com/rizvan555/portfolio-2",
