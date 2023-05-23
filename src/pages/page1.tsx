@@ -63,7 +63,7 @@ function Page1({ language, setLanguage }: Page1Props) {
       }}
       className="h-[100vh] bg-[#100c18] z-0 text-slate-200/70"
     >
-      <header className="flex z-10 bg-[#100c18] justify-between px-10 py-3 border border-slate-700 font-[Neuemachina,sans-serif] fixed min-w-full">
+      <header className="flex z-10 bg-[#100c18] justify-between px-10 py-3 border border-b-[#cd69f4] border-x-0 font-[Neuemachina,sans-serif] fixed min-w-full">
         <h2
           className=" font-bold text-3xl text-slate-200/100 animate__animated animate__jackInTheBox tracking-wide"
           style={{
