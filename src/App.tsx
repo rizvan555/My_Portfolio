@@ -18,8 +18,8 @@ function App() {
       <Page3 language={language} setLanguage={setLanguage} />
       <Page4 language={language} setLanguage={setLanguage} />
       <Page5 language={language} setLanguage={setLanguage} />
-      <Page6 language={language} setLanguage={setLanguage} />
       <Projects />
+      <Page6 language={language} setLanguage={setLanguage} />
       <Footer language={language} setLanguage={setLanguage} />
     </div>
   );

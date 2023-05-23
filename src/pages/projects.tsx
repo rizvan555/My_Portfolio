@@ -40,14 +40,14 @@ const Projects = () => {
     },
   ]);
   return (
-    <div className=" border-t-2">
-      <h1 className="text-start text-5xl my-20 mx-20 font-serif font-bold">
+    <div className=" border-t-2 bg-[#100c18] text-white ">
+      <h1 className="text-start text-5xl py-20 mx-20 font-serif font-bold ">
         Projects
       </h1>
-      <div className=" grid grid-cols-3 gap-7 w-[95vw] mx-auto my-10 ">
+      <div className=" grid grid-cols-3 gap-7 w-[95vw] mx-auto py-10 ">
         {projects.map((project) => {
           return (
-            <ul className="border p-4 text-center rounded-md h-[45vh] hvr-grow-shadow">
+            <ul className=" p-4 text-center rounded-md h-[45vh]  bg-transparent myBox opacity-70">
               <li className=" text-xl font-semibold">{project.projectName}</li>
               <li className=" text-sm my-4">
                 <span className=" text-sm font-semibold">GitHub:</span>

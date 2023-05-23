@@ -28,7 +28,7 @@ function Page3({ language }: Page3Props) {
         </h2>
       </header>
       <main className=" flex justify-around p-6">
-        <div className=" w-[40vw] bg-slate-800">
+        <div className=" w-[40vw] bg-[#100c18]">
           <ul className=" flex flex-col justify-center items-center py-10 text-[#fff] text-3xl">
             {language
               ? eng.languages.map((language, index) => {
