@@ -55,7 +55,7 @@ const Projects = () => {
                   <AiOutlineGithub />
                   GitHub
                 </button>
-                <a href={project.projectLink}></a>
+                <a href={project.projectLink} />
               </li>
               <img
                 className="border rounded-md w-[42vw] h-[30vh]"
