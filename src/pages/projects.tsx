@@ -54,8 +54,8 @@ const Projects = () => {
                 <button className=" text-sm bg-[#921de0] font-semibold mx-auto rounded-sm flex items-center gap-2 px-4 py-2">
                   <AiOutlineGithub />
                   GitHub
+                  <a href={project.projectLink}></a>
                 </button>
-                <a href={project.projectLink} />
               </li>
               <img
                 className="border rounded-md w-[42vw] h-[30vh]"
