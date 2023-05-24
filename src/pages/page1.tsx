@@ -25,7 +25,7 @@ function Page1({ language, setLanguage }: Page1Props) {
   };
   const handleScrollProjectsEng = () => {
     window.scrollTo({
-      top: 4450,
+      top: 4400,
       behavior: "smooth",
     });
   };
