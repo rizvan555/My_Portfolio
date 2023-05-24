@@ -61,7 +61,7 @@ function Page1({ language, setLanguage }: Page1Props) {
       style={{
         backgroundImage: `url(${myPhoto5})`,
         backgroundPosition: " 100% 100%",
-        backgroundSize: "50vw",
+        backgroundSize: "45vw",
         backgroundRepeat: "no-repeat",
       }}
       className="h-[100vh] bg-[#100c18] z-0 text-white md:font-400 font-300"
