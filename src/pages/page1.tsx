@@ -224,7 +224,7 @@ function Page1({ language, setLanguage }: Page1Props) {
       <main className=" flex">
         <section className=" w-[50vw] mt-[38vh] ml-24 font-[Neuemachina,sans-serif]">
           <h1
-            className=" md:text-6xl text-xl mb-8 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap"
+            className=" md:text-6xl text-xl h-20 mb-8 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap"
             style={{ animationDuration: "2s" }}
           >
             {language ? eng.title : de.title}
