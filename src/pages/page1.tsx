@@ -77,7 +77,7 @@ function Page1({ language, setLanguage }: Page1Props) {
           Rizvan K.
         </h2>
         <nav className="flex items-center gap-8 text-[18px]">
-          <ul className="lg:flex gap-14 cursor-pointer animate__animated animate__lightSpeedInRight hidden">
+          <ul className="lg:flex gap-14 cursor-pointer animate__animated animate__lightSpeedInRight hidden transiton-all">
             {language
               ? eng.navbar.map((nav, index) => {
                   if (nav === "About") {

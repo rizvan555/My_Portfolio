@@ -48,7 +48,7 @@ function Page2({ language }: Page2Props) {
           {language ? eng.aboutMySelf : de.aboutMySelf}
         </h2>
         <a
-          className=" px-7 py-5 border m-10 tracking-wide font-bold  bg-[#100c18] text-slate-50 text-m hvr-sweep-to-right animate__animated animate__fadeInLeft"
+          className=" px-7 py-5 border m-10 tracking-wide font-bold bg-[#100c18] text-slate-50 text-m hvr-sweep-to-right animate__animated animate__fadeInLeft transition-all"
           download="Lebenslauf.pdf"
           href="/Lebenslauf.pdf"
         >

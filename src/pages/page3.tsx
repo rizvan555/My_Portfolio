@@ -36,7 +36,7 @@ function Page3({ language }: Page3Props) {
                     <li
                       key={index}
                       onClick={() => handleClick(language)}
-                      className="mb-6 tracking-wider cursor-pointer font-serif text-slate-300 hover:text-[#fff] active:text-[#fff] hvr-underline-from-center pb-1"
+                      className="mb-6 tracking-wider cursor-pointer font-serif text-slate-300 hover:text-[#fff] active:text-[#fff] hvr-underline-from-center transition-all pb-1"
                     >
                       {language}
                     </li>
