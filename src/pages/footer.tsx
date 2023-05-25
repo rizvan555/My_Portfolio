@@ -2,16 +2,41 @@ import React from "react";
 import SocialMedia from "../components/socialMedia";
 import de from "../components/de.json";
 import eng from "../components/eng.json";
+import { useFormik } from "formik";
 
 interface FooterProps {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
 function Footer({ language }: FooterProps) {
+  const onSubmit = async (values: any, actions: any) => {
+    // console.log(values);
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+    actions.resetForm();
+  };
+
+  const formik = useFormik({
+    initialValues: {
+      fullName: "",
+      fullEmail: "",
+      fullSubject: "",
+      message: "",
+    },
+    onSubmit,
+  });
+
+  type FormValues = {
+    fullName: string;
+    fullEmail: string;
+    fullSubject: string;
+    message: string;
+  };
+
   return (
     <div className="flex justify-center bg-[#100c18] h-[100vh] p-6 flex-col border-t-2">
       <main className="flex justify-around">
-        <section className="flex flex-col gap-7">
+        <form className="flex flex-col gap-7" onSubmit={formik.handleSubmit}>
           <h3 className=" mt-19 text-slate-50 font-bold tracking-wider text-xl">
             {language ? eng.footerTitle : de.footerTitle}
           </h3>
@@ -23,6 +48,9 @@ function Footer({ language }: FooterProps) {
                     className=" bg-transparent placeholder:text-slate-50 border-x-0 border-t-0 text-slate-50"
                     type={input.type}
                     placeholder={input.placeholder}
+                    onChange={formik.handleChange}
+                    name={input.name}
+                    value={formik.values[input.name as keyof FormValues]}
                   />
                 );
               })
@@ -32,7 +60,10 @@ function Footer({ language }: FooterProps) {
                     key={index}
                     className=" bg-transparent placeholder:text-slate-50 border-x-0 border-t-0 text-slate-50"
                     type={input.type}
-                    placeholder={input.placheholder}
+                    placeholder={input.placeholder}
+                    onChange={formik.handleChange}
+                    name={input.name}
+                    value={formik.values[input.name as keyof FormValues]}
                   />
                 );
               })}
@@ -42,12 +73,17 @@ function Footer({ language }: FooterProps) {
             id="message"
             cols={60}
             rows={4}
+            onChange={formik.handleChange}
+            value={formik.values.message}
           ></textarea>
 
-          <button className=" w-[20vw] p-4 text-slate-900 bg-slate-50 font-bold hvr-radial-out border">
+          <button
+            className=" w-[20vw] p-4 text-slate-900 bg-slate-50 font-bold hvr-radial-out border"
+            type="submit"
+          >
             {language ? eng.messageButton : de.messageButton}
           </button>
-        </section>
+        </form>
         <section className=" w-60 flex flex-col mt-20 text-slate-50">
           <h3 className="mb-10 font-bold tracking-wider text-xl">
             {language ? eng.contactMe : de.contactMe}

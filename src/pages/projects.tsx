@@ -46,9 +46,12 @@ const Projects = () => {
         Projects
       </h1>
       <div className=" grid grid-cols-3 gap-7 w-[95vw] mx-auto py-10 ">
-        {projects.map((project) => {
+        {projects.map((project, index) => {
           return (
-            <ul className=" p-4 text-center rounded-md h-[45vh]  bg-transparent myBox opacity-70">
+            <ul
+              className=" p-4 text-center rounded-md h-[45vh]  bg-transparent myBox opacity-70"
+              key={index}
+            >
               <li className=" text-xl font-semibold">{project.projectName}</li>
               <li className=" text-sm my-4">
                 <button className=" text-sm bg-[#921de0] font-semibold mx-auto rounded-sm flex items-center gap-2 px-4 py-2">

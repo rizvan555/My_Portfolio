@@ -62,16 +62,19 @@
   "educationTitle": "Ausbildung",
   "inputContainer": [
     {
-      "type": "text",
-      "placheholder": "Name"
+      "name": "fullName",
+      "placeholder": "Voller Name",
+      "type": "text"
     },
     {
-      "type": "email",
-      "placheholder": "Email"
+      "name": "fullEmail",
+      "placeholder": "Volle E-Mail",
+      "type": "email"
     },
     {
-      "type": "text",
-      "placheholder": "Thema"
+      "name": "fullSubject",
+      "placeholder": "Voller Betreff",
+      "type": "text"
     }
   ],
   "footerTitle": "LASSEN SIE EINE LINIE",
