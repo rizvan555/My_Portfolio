@@ -4,12 +4,12 @@ import eng from "../components/eng.json";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 
-interface Page1Props {
+interface HomeProps {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function Page1({ language, setLanguage }: Page1Props) {
+function Home({ language, setLanguage }: HomeProps) {
   const handleScrollHome = () => {
     window.scrollTo({
       top: 0,
@@ -238,4 +238,4 @@ function Page1({ language, setLanguage }: Page1Props) {
   );
 }
 
-export default Page1;
+export default Home;

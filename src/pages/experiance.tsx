@@ -3,12 +3,12 @@ import "animate.css/animate.min.css";
 import de from "../components/de.json";
 import eng from "../components/eng.json";
 
-interface Page4Props {
+interface ExperianceProps {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function Page4({ language }: Page4Props) {
+function Experiance({ language }: ExperianceProps) {
   return (
     <div>
       <header className="flex justify-start py-16 px-20">
@@ -54,4 +54,4 @@ function Page4({ language }: Page4Props) {
   );
 }
 
-export default Page4;
+export default Experiance;

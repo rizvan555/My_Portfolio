@@ -3,12 +3,12 @@ import "animate.css/animate.min.css";
 import de from "../components/de.json";
 import eng from "../components/eng.json";
 
-interface Page3Props {
+interface LanguagesProps {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function Page3({ language }: Page3Props) {
+function Languages({ language }: LanguagesProps) {
   const [click, setClick] = useState("German");
 
   function handleClick(language: any) {
@@ -62,4 +62,4 @@ function Page3({ language }: Page3Props) {
   );
 }
 
-export default Page3;
+export default Languages;

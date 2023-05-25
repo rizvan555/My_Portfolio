@@ -3,12 +3,12 @@ import codingMan1 from "../resource/images/codingMan1.jpg";
 import de from "../components/de.json";
 import eng from "../components/eng.json";
 
-interface Page5Props {
+interface BlogProps {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function Page5({ language }: Page5Props) {
+function Blog({ language }: BlogProps) {
   return (
     <div
       style={{
@@ -29,4 +29,4 @@ function Page5({ language }: Page5Props) {
   );
 }
 
-export default Page5;
+export default Blog;

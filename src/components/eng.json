@@ -57,15 +57,15 @@
   "inputContainer": [
     {
       "type": "text",
-      "placheholder": "Your Name"
+      "placeholder": "Your Name"
     },
     {
       "type": "email",
-      "placheholder": "Email"
+      "placeholder": "Email"
     },
     {
       "type": "text",
-      "placheholder": "Subject"
+      "placeholder": "Subject"
     }
   ],
   "footerTitle": "DROP A LINE",
@@ -73,5 +73,4 @@
   "contactMe": "CONTACT ME",
   "downloadButton": "DOWNLOAD RESUME",
   "projectTitle": "Projects"
-
 }

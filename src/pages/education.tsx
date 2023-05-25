@@ -3,12 +3,12 @@ import "animate.css/animate.min.css";
 import de from "../components/de.json";
 import eng from "../components/eng.json";
 
-interface Page6Props {
+interface EducationProps {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function Page6({ language }: Page6Props) {
+function Education({ language }: EducationProps) {
   return (
     <div>
       <header className="flex justify-start py-16 px-20">
@@ -54,4 +54,4 @@ function Page6({ language }: Page6Props) {
   );
 }
 
-export default Page6;
+export default Education;

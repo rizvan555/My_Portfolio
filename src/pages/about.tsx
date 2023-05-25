@@ -4,12 +4,12 @@ import "animate.css";
 import de from "../components/de.json";
 import eng from "../components/eng.json";
 
-interface Page2Props {
+interface AboutProps {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function Page2({ language }: Page2Props) {
+function About({ language }: AboutProps) {
   const skills = [
     "Html",
     "Css",
@@ -78,4 +78,4 @@ function Page2({ language }: Page2Props) {
   );
 }
 
-export default Page2;
+export default About;

@@ -22,7 +22,7 @@ function Footer({ language }: FooterProps) {
                     key={index}
                     className=" bg-transparent placeholder:text-slate-50 border-x-0 border-t-0 text-slate-50"
                     type={input.type}
-                    placeholder={input.placheholder}
+                    placeholder={input.placeholder}
                   />
                 );
               })
