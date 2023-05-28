@@ -21,7 +21,7 @@ function Languages({ language }: LanguagesProps) {
     <div className=" py-10">
       <header className=" flex pl-20">
         <h2
-          className=" text-4xl font-bold mb-8 tracking-wider font-serif animate__animated overflow-hidden whitespace-nowrap "
+          className=" md:text-4xl text-xl font-bold mb-8 tracking-wider font-serif animate__animated overflow-hidden whitespace-nowrap "
           style={{ animationDuration: "4s" }}
         >
           {language ? eng.languagesTitle : de.languagesTitle}
@@ -54,7 +54,7 @@ function Languages({ language }: LanguagesProps) {
                 })}
           </ul>
         </div>
-        <div className=" md:w-[40vw] w-[90vw] md:leading-10 leading-6 md:text-xl text-xs text-center">
+        <div className=" md:w-[40vw] w-[90vw] md:leading-10 leading-6 md:text-xl text-xs text-center md:mt-0 mt-5">
           <p>{language ? content1 : content2}</p>
         </div>
       </main>
