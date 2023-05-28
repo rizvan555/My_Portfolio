@@ -61,7 +61,7 @@ function Footer({ language }: FooterProps) {
                 return (
                   <input
                     key={index}
-                    className=" bg-transparent placeholder:text-slate-50 border-x-0 border-t-0 text-slate-50"
+                    className="bg-transparent placeholder:text-slate-50 border-x-0 border-t-0 text-slate-50 md:text-lg text-[12px]"
                     type={input.type}
                     placeholder={input.placeholder}
                     onChange={formik.handleChange}
@@ -70,6 +70,7 @@ function Footer({ language }: FooterProps) {
                   />
                 );
               })}
+
           <textarea
             className=" bg-transparent placeholder:text-slate-50 border-x-0 border-t-0 text-slate-50"
             placeholder="Message"
@@ -81,7 +82,7 @@ function Footer({ language }: FooterProps) {
           ></textarea>
 
           <button
-            className=" md:w-[20vw] w-[40vw] md:p-4 p-2 text-slate-900 bg-slate-50 font-bold hvr-radial-out border md:mx-0 mx-auto"
+            className=" md:w-[20vw] w-[50vw] md:p-4 p-2 text-slate-900 bg-slate-50 font-bold hvr-radial-out border md:mx-0 mx-auto"
             type="submit"
           >
             {language ? eng.messageButton : de.messageButton}

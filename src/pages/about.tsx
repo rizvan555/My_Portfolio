@@ -40,7 +40,7 @@ function About({ language }: AboutProps) {
       }}
       className=" flex justify-center items-center py-16"
     >
-      <div className=" flex flex-col items-center text-center bg-slate-50 w-[70vw] px-8">
+      <div className=" flex flex-col items-center text-center bg-slate-50 md:w-[70vw] w-[90vw] px-8">
         <span className=" py-10 tracking-wider text-slate-800 font-bold md:text-2xl text-lg">
           {language ? eng.aboutMySelfTitle : de.aboutMySelfTitle}
         </span>

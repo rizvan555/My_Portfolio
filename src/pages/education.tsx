@@ -42,14 +42,18 @@ function Education({ language }: EducationProps) {
           : de.educationExperiances.map((experiance, index) => {
               return (
                 <div key={index} className=" w-[60vw]">
-                  <h2 className="border-t-2 pt-8 text-4xl mb-4 font-serif">
+                  <h2 className="border-t-2 pt-8 md:text-4xl text-xl mb-4 font-serif">
                     {experiance.uniName}
                   </h2>
                   <h3 className="text-2xl mb-4 font-serif">
                     {experiance.title}
                   </h3>
-                  <span>{experiance.date}</span>
-                  <p className=" mt-4">{experiance.contain}</p>
+                  <span className="md:text-lg text-[12px] ">
+                    {experiance.date}
+                  </span>
+                  <p className="  mt-4 md:text-[17px] text-[10px]">
+                    {experiance.contain}
+                  </p>
                 </div>
               );
             })}

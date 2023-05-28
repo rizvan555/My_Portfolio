@@ -31,7 +31,7 @@ function SocialMedia() {
     },
   ];
   return (
-    <div className="flex  w-[30vw] gap-5 ml-[-2vw]">
+    <div className="flex w-[30vw] md:gap-5 md:-ml-[2vw] mb-4">
       <section className=" flex gap-5 ">
         {socialMedia.map((media, index) => {
           return (
