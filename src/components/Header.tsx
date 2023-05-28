@@ -6,12 +6,16 @@ import { hasFormSubmit } from "@testing-library/user-event/dist/utils";
 interface HeaderProps {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
+  hamburger: boolean;
+  setHamburger: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function Header({ language, setLanguage }: HeaderProps) {
-  const [hamburger, setHamburger] = useState(false);
-  console.log(hamburger);
-
+function Header({
+  language,
+  setLanguage,
+  hamburger,
+  setHamburger,
+}: HeaderProps) {
   return (
     <div>
       <header className="flex z-10 lg:bg-[rgba(0,0,0,0.8)] md:justify-between px-10 py-5 border border-b-[#cd69f4] border-x-0 font-[Neuemachina,sans-serif] fixed min-w-full">

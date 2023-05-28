@@ -27,16 +27,16 @@ function Languages({ language }: LanguagesProps) {
           {language ? eng.languagesTitle : de.languagesTitle}
         </h2>
       </header>
-      <main className=" flex justify-around p-6">
-        <div className=" w-[40vw] bg-[#100c18]">
-          <ul className=" flex flex-col justify-center items-center py-10 text-[#fff] text-3xl">
+      <main className=" md:flex justify-around grid grid-col p-6">
+        <div className=" md:w-[40vw] w-[90vw] bg-[#100c18]">
+          <ul className=" flex flex-col justify-center items-center md:py-10 py-3 text-[#fff] md:text-3xl text-base">
             {language
               ? eng.languages.map((language, index) => {
                   return (
                     <li
                       key={index}
                       onClick={() => handleClick(language)}
-                      className="mb-6 tracking-wider cursor-pointer font-serif text-slate-300 hover:text-[#fff] active:text-[#fff] hvr-underline-from-center transition-all pb-1"
+                      className=" tracking-wider cursor-pointer font-serif text-slate-300 hover:text-[#fff] active:text-[#fff] hvr-underline-from-center transition-all pb-1"
                     >
                       {language}
                     </li>
@@ -54,7 +54,7 @@ function Languages({ language }: LanguagesProps) {
                 })}
           </ul>
         </div>
-        <div className=" w-[40vw] leading-10 text-xl">
+        <div className=" md:w-[40vw] w-[90vw] md:leading-10 leading-6 md:text-xl text-xs text-center">
           <p>{language ? content1 : content2}</p>
         </div>
       </main>

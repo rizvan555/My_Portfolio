@@ -7,7 +7,7 @@ interface NavbarProps {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;
   hamburger: boolean;
-  setHamburger:React.Dispatch<React.SetStateAction<boolean>>;
+  setHamburger: React.Dispatch<React.SetStateAction<boolean>>;
 }
 function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
   const handleScrollHome = () => {
@@ -55,7 +55,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
 
   return (
     <ul
-      className={`md:flex grid grid-cols-1 md:gap-14 ${
+      className={`md:flex grid grid-cols-1 md:static absolute top-0 right-0 md:p-0 p-20 md:gap-14 gap-20 text-center ${
         hamburger ? "block" : "hidden"
       }  md:bg-transparent bg-slate-200 w-full md:text-white text-black cursor-pointer md:animate__animated animate__lightSpeedInRight transition-all`}
     >
