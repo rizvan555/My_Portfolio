@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Navbar from "./Navbar";
-import { hasFormSubmit } from "@testing-library/user-event/dist/utils";
 
 interface HeaderProps {
   language: boolean;
