@@ -11,7 +11,7 @@ interface ExperianceProps {
 function Experiance({ language }: ExperianceProps) {
   return (
     <div>
-      <header className="flex justify-start py-16 px-20">
+      <header className="flex justify-start md:py-16 py-6 px-20">
         <h2
           className="md:text-5xl text-xl md:h-20 h-6 font-bold tracking-wider font-serif md:mb-[2vh] mb-[2px] animate__animated overflow-hidden"
           style={{ animationDuration: "3s" }}

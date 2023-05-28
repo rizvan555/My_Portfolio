@@ -29,7 +29,7 @@ function Languages({ language }: LanguagesProps) {
       </header>
       <main className=" md:flex justify-around grid grid-col p-6">
         <div className=" md:w-[40vw] w-[90vw] bg-[#100c18]">
-          <ul className=" flex flex-col justify-center items-center md:py-10 py-3 text-[#fff] md:text-3xl text-base">
+          <ul className=" flex flex-col justify-center items-center md:py-10 py-3 text-[#fff] md:text-3xl text-base md:gap-6">
             {language
               ? eng.languages.map((language, index) => {
                   return (
