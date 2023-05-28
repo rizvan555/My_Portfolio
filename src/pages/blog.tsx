@@ -10,18 +10,12 @@ interface BlogProps {
 
 function Blog({ language }: BlogProps) {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${codingMan1})`,
-        backgroundPosition: "bottom left",
-        backgroundSize: "45vw",
-        backgroundRepeat: "no-repeat",
-      }}
-      className="flex justify-between items-center bg-[#100c18] py-36 mt-2"
-    >
-      <section className="w-[40vw]"></section>
-      <section className=" flex justify-between w-[50vw] pr-5 tracking-wide leading-extra-loose mt-6">
-        <p className="text-[#fff] text-[1.1rem]">
+    <div className=" border-t-2 md:flex grid grid-col justify-between items-center bg-[#100c18] md:py-2 pb-10 md:mt-2">
+      <section className="md:w-[40vw]">
+        <img src={codingMan1} alt="coding-man" />
+      </section>
+      <section className=" flex md:w-[50vw] w-[80vw] mx-auto pr-5 tracking-wider leading-extra-loose md:mt-6 mt-10">
+        <p className="text-[#fff] md:text-[1.1rem] text-xs ">
           {language ? eng.myInfo : de.myInfo}
         </p>
       </section>
