@@ -10,10 +10,16 @@ import About from "./pages/about";
 
 function App() {
   const [language, setLanguage] = useState(true);
+  const [hamburger, setHamburger] = useState(false);
 
   return (
     <div>
-      <Home language={language} setLanguage={setLanguage} />
+      <Home
+        language={language}
+        setLanguage={setLanguage}
+        hamburger={hamburger}
+        setHamburger={setHamburger}
+      />
       <About language={language} setLanguage={setLanguage} />
       <Languages language={language} setLanguage={setLanguage} />
       <Experiance language={language} setLanguage={setLanguage} />

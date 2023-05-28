@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "../components/Header";
 import de from "../components/de.json";
 import eng from "../components/eng.json";
@@ -11,9 +10,7 @@ interface HomeProps {
   setHamburger: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function Home({ language, setLanguage }: HomeProps) {
-  const [hamburger, setHamburger] = useState(false);
-
+function Home({ language, setLanguage, hamburger, setHamburger }: HomeProps) {
   return (
     <div
       className={`md:h-[100vh] text-white  z-0 md:font-400 font-300 ${
