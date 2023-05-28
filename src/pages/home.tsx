@@ -24,9 +24,9 @@ function Home({ language, setLanguage, hamburger, setHamburger }: HomeProps) {
         setHamburger={setHamburger}
       />
       <main className={`flex relative`}>
-        <section className=" md:w-[50vw] w-[80vw] md:mt-[38vh] my-44 ml-24 font-[Neuemachina,sans-serif]">
+        <section className="md:w-[50vw] w-[80vw] md:mt-[38vh] my-44 md:ml-24 ml-10 font-[Neuemachina,sans-serif]">
           <h1
-            className="md:text-6xl text-4xl h-20 md:mb-8 mb-0 mt-20 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap"
+            className="md:text-6xl w-full text-3xl h-20 md:mb-8 mb-0 mt-20 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap"
             style={{ animationDuration: "2s" }}
           >
             {language ? eng.title : de.title}
