@@ -42,14 +42,14 @@ const Projects = () => {
   ]);
   return (
     <div className=" border-t-2 bg-[#100c18] text-white ">
-      <h1 className="text-start text-5xl py-20 mx-20 font-serif font-bold ">
+      <h1 className="text-start md:text-5xl text-xl py-20 mx-20 font-serif font-bold ">
         Projects
       </h1>
-      <div className=" grid grid-cols-3 gap-7 w-[95vw] mx-auto py-10 ">
+      <div className=" md:grid grid-cols-3 md:gap-7 md:w-[95vw] w-[70vw] mx-auto py-10 md:mb-0 mb-10">
         {projects.map((project, index) => {
           return (
             <ul
-              className=" p-4 text-center rounded-md h-[45vh]  bg-transparent myBox opacity-70"
+              className=" md:p-4 p-2 text-center rounded-md md:h-[45vh] md:mb-0 mb-10 bg-transparent myBox opacity-70"
               key={index}
             >
               <li className=" text-xl font-semibold">{project.projectName}</li>
@@ -60,7 +60,7 @@ const Projects = () => {
                 </button>
               </li>
               <img
-                className="border rounded-md w-[42vw] h-[30vh]"
+                className="border rounded-md md:w-[42vw] w-[60vw] md:h-[30vh] mx-auto"
                 src={project.projectImage}
                 alt={project.projectImage}
               />
