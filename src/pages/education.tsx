@@ -10,7 +10,7 @@ interface EducationProps {
 
 function Education({ language }: EducationProps) {
   return (
-    <div>
+    <div className="bg-[#100c18] text-slate-100  border-t-2">
       <header className="flex justify-start py-16 px-20">
         <h2
           className="md:text-5xl text-xl h-20 font-bold tracking-wider font-serif md:mb-[2vh] -mb-16 animate__animated overflow-hidden"
@@ -19,12 +19,12 @@ function Education({ language }: EducationProps) {
           {language ? eng.educationTitle : de.educationTitle}
         </h2>
       </header>
-      <main className="flex flex-col justify-center items-center gap-10 mb-20">
+      <main className="flex flex-col justify-center items-center gap-10 pb-20">
         {language
           ? eng.educationExperiances.map((experiance, index) => {
               return (
                 <div key={index} className=" w-[60vw]">
-                  <h2 className="border-t-2 pt-8 md:text-4xl text-xl mb-4 font-serif">
+                  <h2 className="border-[#cd69f4] border-t-2 pt-8 md:text-4xl text-xl mb-4 font-serif">
                     {experiance.uniName}
                   </h2>
                   <h3 className="md:text-2xl mb-4 font-serif">
@@ -42,7 +42,7 @@ function Education({ language }: EducationProps) {
           : de.educationExperiances.map((experiance, index) => {
               return (
                 <div key={index} className=" w-[60vw]">
-                  <h2 className="border-t-2 pt-8 md:text-4xl text-xl mb-4 font-serif">
+                  <h2 className="border-[#cd69f4] border-t-2 pt-8 md:text-4xl text-xl mb-4 font-serif">
                     {experiance.uniName}
                   </h2>
                   <h3 className="text-2xl mb-4 font-serif">

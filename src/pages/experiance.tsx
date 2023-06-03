@@ -10,7 +10,7 @@ interface ExperianceProps {
 
 function Experiance({ language }: ExperianceProps) {
   return (
-    <div>
+    <div className="bg-[#100c18] text-slate-100  border-t-2">
       <header className="flex justify-start md:py-16 py-6 px-20">
         <h2
           className="md:text-5xl text-xl md:h-20 h-6 font-bold tracking-wider font-serif md:mb-[2vh] mb-[2px] animate__animated overflow-hidden"
@@ -24,7 +24,7 @@ function Experiance({ language }: ExperianceProps) {
           ? eng.experiances.map((experiance, index) => {
               return (
                 <div className=" w-[60vw]" key={index}>
-                  <h3 className="border-t-2 pt-8 md:text-3xl text-base font-serif ">
+                  <h3 className="border-[#cd69f4] border-t-2 pt-8 md:text-3xl text-base font-serif ">
                     {experiance.title}
                   </h3>
                   <h3 className="pt-2 md:text-xl text-[13px] mb-4 font-serif ">
@@ -42,7 +42,7 @@ function Experiance({ language }: ExperianceProps) {
           : de.experiances.map((experiance) => {
               return (
                 <div className=" w-[60vw]">
-                  <h3 className="border-t-2 pt-8 md:text-3xl text-base font-serif ">
+                  <h3 className="border-[#cd69f4] border-t-2 pt-8 md:text-3xl text-base font-serif ">
                     {experiance.title}
                   </h3>
                   <h3 className="pt-2 md:text-xl text-[13px] mb-4 font-serif ">

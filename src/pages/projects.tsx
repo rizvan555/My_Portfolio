@@ -49,7 +49,7 @@ const Projects = () => {
         {projects.map((project, index) => {
           return (
             <ul
-              className=" md:p-4 p-2 text-center rounded-md md:h-[45vh] md:mb-0 mb-10 bg-transparent myBox opacity-70"
+              className=" md:p-4 p-2 text-center rounded-md md:h-[45vh] md:mb-0 mb-10 bg-transparent myBox opacity-80"
               key={index}
             >
               <li className=" text-xl font-semibold">{project.projectName}</li>

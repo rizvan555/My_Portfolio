@@ -10,7 +10,7 @@ interface BlogProps {
 
 function Blog({ language }: BlogProps) {
   return (
-    <div className=" border-t-2 md:flex grid grid-col justify-between items-center bg-[#100c18] md:py-2 pb-10 md:mt-2">
+    <div className="  border-t-2 md:flex grid grid-col justify-between items-center bg-[#100c18] md:py-8 pb-10">
       <section className="md:w-[40vw]">
         <img src={codingMan1} alt="coding-man" />
       </section>
