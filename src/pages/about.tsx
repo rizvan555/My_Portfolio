@@ -40,15 +40,15 @@ function About({ language }: AboutProps) {
       }}
       className=" flex justify-center items-center py-16"
     >
-      <div className=" flex flex-col items-center text-center bg-slate-50 md:w-[70vw] w-[90vw] px-8">
-        <span className=" py-10 tracking-wider text-slate-800 font-bold md:text-2xl text-lg">
+      <div className=" flex flex-col items-center text-center bg-[#100c18] md:w-[70vw] w-[90vw] px-8">
+        <span className=" py-10 tracking-wider text-slate-100 font-bold md:text-2xl text-lg">
           {language ? eng.aboutMySelfTitle : de.aboutMySelfTitle}
         </span>
-        <h2 className=" md:text-2xl text-xs leading-extra-loose">
+        <h2 className=" md:text-2xl text-xs leading-extra-loose text-slate-100">
           {language ? eng.aboutMySelf : de.aboutMySelf}
         </h2>
         <a
-          className="md:w-[20vw] w-40 px-7 md:py-5 py-2 border m-10 tracking-wide font-bold bg-[#100c18] text-slate-50 md:text-base text-[8px] hvr-sweep-to-right animate__animated animate__fadeInLeft transition-all"
+          className="md:w-[20vw] w-40 px-7 md:py-5 py-2 border m-10 border-[#8613d3] tracking-wide font-bold bg-[#100c18] text-slate-100 md:text-base text-[8px] hvr-sweep-to-right animate__animated animate__fadeInLeft transition-all"
           download="Lebenslauf.pdf"
           href="/Lebenslauf.pdf"
         >
@@ -63,7 +63,7 @@ function About({ language }: AboutProps) {
             return (
               <li
                 key={index}
-                className=" md:w-[10vw] w-[20vw] p-2 hvr-shutter-out-vertical transition-all cursor-pointer hover:font-bold"
+                className=" md:w-[10vw] w-[20vw] p-2 hvr-shutter-out-vertical transition-all cursor-pointer hover:font-bold border border-[#8613d3] text-slate-100"
               >
                 {skill}
               </li>
