@@ -19,7 +19,7 @@ function Experiance({ language }: ExperianceProps) {
           {language ? eng.experianceTitle : de.experianceTitle}
         </h2>
       </header>
-      <main className="flex flex-col justify-center items-center md:gap-10 gap-y-2 ">
+      <main className="flex flex-col justify-center items-center md:gap-10 gap-y-2 pb-8 ">
         {language
           ? eng.experiances.map((experiance, index) => {
               return (
@@ -33,7 +33,7 @@ function Experiance({ language }: ExperianceProps) {
                   <span className="italic font-bold md:text-xl text-[11px]">
                     {experiance.date}
                   </span>
-                  <p className=" mt-4 mb-4 md:text-base text-xs">
+                  <p className=" my-4 md:text-base text-xs">
                     {experiance.contain}
                   </p>
                 </div>
@@ -51,7 +51,7 @@ function Experiance({ language }: ExperianceProps) {
                   <span className="italic font-bold md:text-xl text-[11px]">
                     {experiance.date}
                   </span>
-                  <p className=" mt-4 mb-4 md:text-base text-xs">
+                  <p className="my-4 md:text-base text-xs">
                     {experiance.contain}
                   </p>
                 </div>
