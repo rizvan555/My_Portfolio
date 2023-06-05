@@ -1,7 +1,6 @@
 import de from "../components/de.json";
 import eng from "../components/eng.json";
 import myPhoto5 from "../resource/images/myPhoto5.png";
-
 import Typewriter from "react-ts-typewriter";
 interface TypeWriteProps {
   language: boolean;
