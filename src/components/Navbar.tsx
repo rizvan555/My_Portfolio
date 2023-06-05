@@ -140,7 +140,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
                 <li
                   key={index}
                   className=" hvr-outline-in pb-1 hover:text-white tracking-wide"
-                  onClick={handleScrollAbout}
+                  onClick={handleScrollAboutDe}
                 >
                   {nav}
                 </li>
