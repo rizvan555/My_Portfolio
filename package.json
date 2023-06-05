@@ -25,7 +25,7 @@
     "start": "craco start",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "build": "NODE_OPTIONS='--openssl-legacy-provider' next build && next export",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' next build && next export"
   },
   "eslintConfig": {
     "extends": [
