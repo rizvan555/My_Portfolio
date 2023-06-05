@@ -39,4 +39,5 @@ function TypeWrite({ language }: TypeWriteProps) {
     </main>
   );
 }
+
 export default TypeWrite;
