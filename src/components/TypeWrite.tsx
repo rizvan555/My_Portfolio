@@ -6,7 +6,6 @@ import Typewriter from "react-ts-typewriter";
 interface TypeWriteProps {
   language: boolean;
 }
-
 export default function myComponent({ language }: TypeWriteProps) {
   return (
     <main className={`flex relative`}>
