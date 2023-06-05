@@ -13,10 +13,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-rotating-text": "^1.4.1",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^5.0.1",
     "react-ts-typewriter": "^0.1.8-b",
+    "typewriter-effect": "^2.20.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
