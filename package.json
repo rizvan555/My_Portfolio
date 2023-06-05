@@ -19,6 +19,7 @@
     "react-simple-typewriter": "^5.0.1",
     "react-ts-typewriter": "^0.1.8-b",
     "typewriter-effect": "^2.20.1",
+    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

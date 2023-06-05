@@ -48,7 +48,7 @@ function About({ language }: AboutProps) {
           {language ? eng.aboutMySelf : de.aboutMySelf}
         </h2>
         <a
-          className="md:w-[20vw] w-40 px-7 md:py-5 py-2 border m-10 border-[#cd69f4] tracking-wide font-bold bg-[#100c18] text-slate-100 md:text-base text-[8px] hvr-sweep-to-right animate__animated animate__fadeInLeft transition-all"
+          className="md:w-[25vw] w-40 px-7 md:py-5 py-2 border m-10 border-[#cd69f4] tracking-wide font-bold bg-[#100c18] text-slate-100 md:text-base text-[8px] hvr-sweep-to-right animate__animated animate__fadeInLeft transition-all"
           download="Lebenslauf.pdf"
           href="/Lebenslauf.pdf"
         >

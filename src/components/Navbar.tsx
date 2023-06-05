@@ -22,9 +22,15 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
       behavior: "smooth",
     });
   };
+  const handleScrollAboutDe = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
   const handleScrollProjectsEng = () => {
     window.scrollTo({
-      top: 4300,
+      top: 4400,
       behavior: "smooth",
     });
   };
@@ -36,7 +42,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
   };
   const handleScrollBlogEng = () => {
     window.scrollTo({
-      top: 3600,
+      top: 3700,
       behavior: "smooth",
     });
   };
@@ -67,7 +73,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
       </button>
       {language
         ? eng.navbar.map((nav, index) => {
-            if (nav === "About") {
+            if (nav === "About" || nav === "Über mich") {
               return (
                 <li
                   key={index}

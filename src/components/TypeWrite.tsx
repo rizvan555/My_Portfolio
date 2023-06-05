@@ -17,7 +17,7 @@ function TypeWrite({ language }: TypeWriteProps) {
               autoStart: true,
               loop: true,
               delay: 150,
-              deleteSpeed: 20,
+              deleteSpeed: 100,
             }}
           />
         </h1>
@@ -28,7 +28,7 @@ function TypeWrite({ language }: TypeWriteProps) {
               autoStart: true,
               loop: true,
               delay: 20,
-              deleteSpeed: 10,
+              deleteSpeed: 2,
             }}
           />
         </h3>

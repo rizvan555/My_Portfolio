@@ -36,12 +36,12 @@ function Header({
             setHamburger={setHamburger}
           />
           <select
-            value={language ? "EN" : "DE"}
+            value={language ? "DE" : "EN"}
             onChange={() => setLanguage(!language)}
             className=" text-slate-500 bg-slate-300 md:w-20 w-6 rounded-full border-[#ce5ef8]"
           >
-            <option value="EN">EN 🇺🇸</option>
             <option value="DE">DE 🇩🇪</option>
+            <option value="EN">EN 🇺🇸</option>
           </select>
 
           <button

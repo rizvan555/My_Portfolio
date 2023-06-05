@@ -9,7 +9,7 @@ interface LanguagesProps {
 }
 
 function Languages({ language }: LanguagesProps) {
-  const [click, setClick] = useState("German");
+  const [click, setClick] = useState("Deutsch");
 
   function handleClick(language: any) {
     setClick(language);
@@ -46,11 +46,16 @@ function Languages({ language }: LanguagesProps) {
                     </li>
                   );
                 })
-              : de.languages.map((language) => {
+              : de.languages.map((language, index) => {
                   return (
                     <li
+                      key={index}
                       onClick={() => handleClick(language)}
-                      className="mb-6 tracking-wider cursor-pointer font-serif text-slate-300 hover:text-[#000] active:text-[#000] hvr-underline-from-center pb-1"
+                      className={`tracking-wider cursor-pointer font-serif ${
+                        click === language
+                          ? "hover:text-[#000] active:text-[#000] pb-1 font-bold text-[#020202]} "
+                          : ""
+                      }`}
                     >
                       {language}
                     </li>

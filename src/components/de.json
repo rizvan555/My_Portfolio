@@ -1,85 +1,78 @@
 {
-  "navbar": ["Startseite", "Über mich", "Projekte", "Blog", "Kontakt"],
-  "title": "Full-Stack-Entwickler",
-  "subtitle": "Ich bin ein MERN-Entwickler mit Leidenschaft für Webentwicklung. Ich bin ständig bemüht, meine Fähigkeiten zu verbessern und zu lernen.",
-  "hireBtnText": "EINSTELLEN",
-  "aboutMySelfTitle": "ÜBER MICH",
-  "aboutMySelf": "Ich bin MERN-Full-Stack-Entwickler und habe Erfahrung beim Erstellen von Webanwendungen mit MongoDB, Express, React und Node.js. Ich beherrsche Front-End-Entwicklungstechnologien wie HTML, CSS und JavaScript und habe mit beliebten Frameworks und Bibliotheken wie React Redux gearbeitet.",
-  "downloadButton": "MEIN LEBENSLAUF",
-  "skills": "Fähigkeiten",
-  "infoBottom1": "Ich habe auch Erfahrung in der Backend-Entwicklung mit Node.js und habe mit verschiedenen APIs und Datenbanken gearbeitet, um skalierbare und robuste Anwendungen zu erstellen.",
-  "languages": [
-    "Deutsch",
-    "Englisch",
-    "Turkisch",
-    "Russisch",
-    "Aserbaidschanisch"
-  ],
-  "languagesTitle": "Sprache",
+  "navbar": ["Home", "About", "Projects", "Blog", "Contact"],
+  "title": "Full-Stack-Developer",
+  "subtitle": "I'm a MERN full stack developer with a passion for web development.I'm dedicated to constantly learning and improving my skills.",
+  "hireBtnText": "HIRE ME",
+  "aboutMySelfTitle": "ABOUT MYSELF",
+  "aboutMySelf": " I am MERN full-stack developer, I have experience building web applications using MongoDB, Express, React, and Node.js. I am proficient in front-end development technologies such as HTML, CSS, and JavaScript, and I have worked with popular frameworks and libraries like React Redux.",
+  "skills": "Skills",
+  "infoBottom1": "I am also experienced in back-end development with Node.js and have worked with various APIs and databases to build scalable and robust applications.",
+  "languagesTitle": "Languages",
+  "languages": ["German", "English", "Turkish", "Russian", "Azerbaijani"],
   "languageContain": {
-    "Deutsch": "Obwohl ich noch nicht lange in Deutschland lebe, kenne ich die deutsche Sprache und Kultur in- und auswendig und versuche mich voll zu integrieren. Dementsprechend habe ich direkt nach meiner Ankunft mit Integrationskursen begonnen und diese nach einiger Zeit mit einem C1-Sprachzertifikat erfolgreich abgeschlossen",
-    "Englisch": "Weil ich eine Zeit lang in China und Dubai gelebt und Englisch in meiner Arbeitserfahrung verwendet habe, habe ich Erfahrung mit der englischen Sprache. Ich kann meine Gedanken auf Englisch frei ausdrücken und ich kann die Person verstehen, mit der ich kommuniziere.",
-    "Turkisch": "Ich kann Türkisch grammatikalisch korrekt sprechen, schreiben, lesen und verstehen.",
-    "Russisch": "Da ich meine Sekundarschulbildung in russischer Sprache erhalten habe, kann ich grammatikalisch korrekt auf Russisch schreiben, lesen, verstehen und sprechen.",
-    "Aserbaidschanisch": "Aserbaidschanisch ist meine Muttersprache und ich kann es frei sprechen und verstehen."
+    "German": "Although I haven't lived in Germany for long, I know the German language and culture inside out and am trying to fully integrate. Accordingly, I started integration courses immediately after my arrival and after some time successfully completed them with a C1 language certificate.",
+    "English": "Because I have lived in China and Dubai for a while and I have used English in my work experience, I have English language experience. I can freely express my thoughts in English and I can understand the person I am communicating with.",
+    "Turkish": "I can speak, write, read and understand Turkish in a grammatically correct way.",
+    "Russian": "Since I received my secondary education in Russian language, I can write, read, understand and speak in Russian in a grammatically correct way.",
+    "Azerbaijani": "Azerbaijani is my mother tongue and I can speak and understand it freely."
   },
-  "experienceTitle": "Erfahrung",
+  "experienceTitle": "Experience",
   "experiences": [
     {
-      "title": "Productionsentwickler",
+      "title": "Production Developer",
       "company": "IK Hofmann GmbH",
-      "date": "November 2021 -  Dezember 2022",
-      "contain": "Ich war verantwortlich für die sichere Annahme von Containern, deren Inspektion durch mich nach der Befüllung durch andere Mitarbeiter und deren ordnungsgemäße Platzierung an den entsprechenden Standorten bei BASF, dem größten Chemieunternehmen. Ich habe bei diesen Aufgaben mit viel Liebe zum Detail gearbeitet und alle notwendigen Vorkehrungen getroffen, um sicherzustellen, dass die Arbeit korrekt ausgeführt wurde. Ich habe sorgfältig darauf geachtet, dass die Behälter ordnungsgemäß etikettiert, gekennzeichnet und so gelagert oder transportiert wurden, dass Schäden an den Produkten vermieden wurden. Darüber hinaus habe ich eng mit meinen Kollegen zusammengearbeitet, um sicherzustellen, dass der Auftrag pünktlich und ohne Probleme abgeschlossen wurde. Ich habe immer darauf geachtet, die Zufriedenheit der Kunden und den Ruf des Unternehmens zu schützen"
+      "date": "November 2021 -  December 2022",
+      "contain": "I was responsible for ensuring the safe acceptance of containers, their inspection by me after being filled by other employees, and their proper placement to the appropriate locations at BASF, the largest chemical company. I worked with great attention to detail in these tasks and took all necessary precautions to ensure that the job was done correctly. I was meticulous in ensuring that the containers were properly labeled, marked, and stored or transported in a manner that prevented damage to the products.  In addition, I worked closely with my colleagues to ensure that the job was completed on time and without any issues. I always took care to protect the satisfaction of customers and the reputation of the company"
     },
     {
-      "title": "Logistikplaner",
+      "title": "Logistic planner",
       "company": "Syncreon GmbH",
-      "date": "März 2020 - Oktober 2021",
-      "contain": "Eine meiner Aufgaben war es, die ordnungsgemäße Verwaltung der Logistik sicherzustellen und die rechtzeitige, sichere und ordnungsgemäße Platzierung von Waren für Kunden aller Logistikunternehmen sicherzustellen. Dazu gehört, sicherzustellen, dass Container und Sendungen ordnungsgemäß gefüllt und gemäß den Anforderungen der Benutzer empfangen und platziert werden. Insgesamt hat mir meine Berufserfahrung in dieser Rolle ermöglicht, meine Fähigkeiten im Logistikmanagement, einschließlich der Organisation und sicheren Handhabung, zu entwickeln von Waren sowie die Gewährleistung einer rechtzeitigen und effektiven Lieferung von Sendungen."
+      "date": "March 2020 - October 2021",
+      "contain": "One of my job responsibilities has been ensuring the proper management of logistics and ensuring timely, safe, and proper placement of goods for clients of any logistics company. This includes ensuring that containers and shipments are properly filled and that they are received and placed in accordance with the requirements of users.Overall, my work experience in this role has allowed me to develop my skills in logistics management, including the organization and safe handling of goods, as well as ensuring timely and effective delivery of shipments."
     },
     {
-      "title": "Front End Entwickler",
+      "title": "Front End Developer",
       "company": "Farkhadov LLC & Trans Broker MMC",
-      "date": "Oktober 2006 - September 2015",
-      "contain": "Während meiner Tätigkeit von 2006 bis 2015 hatte ich die Möglichkeit, als Frontend-Entwickler in verschiedenen gemeinsamen Projekten mit Farkhadov LLC und Transbroker LLC zu arbeiten. Meine Rolle bestand darin, meine während meines Studiums erworbene Expertise in HTML, CSS, JavaScript und MySQL einzusetzen. Diese Fähigkeiten konnte ich beruflich in diversen Projekten weiterentwickeln. Im Rahmen meiner Aufgaben war ich für die Betreuung der Websites verschiedener Behörden und privater Unternehmen verantwortlich. Dazu gehörte die Sicherstellung des ordnungsgemäßen Funktionierens der Webseiten sowie die Verwaltung und Organisation der erforderlichen Daten. Ich hatte auch die Aufgabe, veraltete Informationen mit den neuesten Daten zu aktualisieren, um sicherzustellen, dass die Benutzer Zugriff auf die aktuellsten Informationen hatten. Insgesamt ermöglichte mir meine Erfahrung in dieser Rolle, meine technischen Fähigkeiten zu verbessern und zu lernen, mit Kollegen zusammenzuarbeiten , und entwickeln Sie ein Verständnis für die effektive Verwaltung und Pflege von Websites."
+      "date": "October 2006 - September 2015",
+      "contain": "During my tenure from 2006 to 2015, I had the opportunity to work as a Frontend Developer in various joint projects with Farkhadov LLC and Transbroker LLC. My role involved utilizing my expertise in HTML, CSS, JavaScript, and MySQL that I had acquired during my university studies. I was able to further develop these skills in a professional setting, working on diverse projects.As part of my responsibilities, I was responsible for monitoring the websites of various government agencies and private companies. This included ensuring the proper functioning of webpages, as well as managing and organizing the necessary data. I was also tasked with updating outdated information with the latest data to ensure that users had access to the most up-to-date information.Overall, my experience working in this role allowed me to hone my technical skills, learn to work collaboratively with colleagues, and develop an understanding of how to manage and maintain websites effectively."
     }
   ],
-  "myInfo": "Obwohl ich Erfahrung in der Frontend-Entwicklung habe, gebe ich mich damit nicht zufrieden. Ich arbeite ständig daran, mich zu verbessern und mit neuen Technologien, Frameworks und den neuesten Entwicklungen in Webtechnologien Schritt zu halten. Derzeit tauche ich neben der Frontend-Entwicklung tiefer in den MERN-Stack ein. Mein Ziel ist es, in kürzester Zeit mehr Wissen zu erwerben und dieses Wissen in meiner Arbeit anzuwenden, um den Unternehmen, für die ich arbeite, einen Mehrwert zu bieten. Um dieses Ziel zu erreichen, bin ich stets bestrebt, meinen Lernprozess zu verbessern und Zeit zu investieren, um mit den neuesten Technologien auf dem Laufenden zu bleiben. Während ich mich über neue Entwicklungen informiere, arbeite ich auch daran, mein aktuelles Wissen auf dem neuesten Stand zu halten. Insbesondere konzentriere ich mich auf den MERN-Stack für die Backend-Entwicklung, mit dem Ziel, Experte für Full-Stack-Entwicklung zu werden. Auf diese Weise kann ich nahtlos sowohl am Frontend als auch am Backend jedes Projekts arbeiten.",
+  "myInfo": "Although I have experience in frontend development, I am not satisfied with just that. I constantly work on improving myself and keeping up with new technologies, frameworks, and all the latest developments in web technologies. Currently, I am diving deeper into the MERN stack alongside frontend development. My goal is to acquire more knowledge in the shortest possible time and apply this knowledge in my work to provide more value to the companies I work for. To achieve this goal, I am always striving to improve my learning process and dedicate time to staying up-to-date with the latest technologies. While learning about new developments, I also work to keep my current knowledge up-to-date. In particular, I am focusing on the MERN stack for backend development, with the aim of becoming an expert in full-stack development. This way, I can seamlessly work on both the frontend and backend of any project.",
   "educationExperiances": [
     {
       "uniName": "SuperCode GmbH & Co. KG ",
-      "title": "Full Stack Entwicklung",
+      "title": "Full Stack Development",
       "date": "01/2023 - 07/2023",
       "contain": "HTML5, CSS, SASS, Bootstrap, JavaScript, Git-Github, React JS, Node JS, Express JS, Mongo DB, Trello, VS Code, Figma"
     },
     {
       "uniName": "Baku Business University",
-      "title": "Wirtschaftsinformatik (Finans & Kredit)",
+      "title": "Business Informatics (Finans & Credit)",
       "date": "09/2001 - 07/2005",
-      "contain": " Die Planung-Entwicklung und Umsetzung von IT-Systemen zur Unterstützung von Geschäftsprozessen / Die Analyse und Optimierung von Geschäftsprozessen durch den Einsatz von IT / Die Implementierung und Integration von Softwarelösungen in Unternehmen / Grundlagender Betriebswirtschaftslehre wie beispielsweise  Unternehmensführung, Rechnungswesen, Marketing und Personalwesen / Methoden und Techniken der Datenanalyse und Datenverarbeitung / Projektmanagement und Teamarbeit"
+      "contain": " The planning, development and implementation of IT systems to support business processes / the analysis and optimization of business processes through the use of IT / the implementation and integration of software solutions in companies / basics of business administration such as corporate management, accounting, marketing and human resources / methods and Techniques of data analysis and data processing / project management and teamwork"
     }
   ],
-  "educationTitle": "Ausbildung",
+  "educationTitle": "Education",
   "inputContainer": [
     {
       "name": "fullName",
-      "placeholder": "Voller Name",
-      "type": "text"
+      "type": "text",
+      "placeholder": "Your Name"
     },
     {
       "name": "fullEmail",
-      "placeholder": "Volle E-Mail",
-      "type": "email"
+      "type": "email",
+      "placeholder": "Email"
     },
     {
       "name": "fullSubject",
-      "placeholder": "Voller Betreff",
-      "type": "text"
+      "type": "text",
+      "placeholder": "Subject"
     }
   ],
-  "footerTitle": "LASSEN SIE EINE LINIE",
-  "messageButton": "NACHRICHT SENDEN",
-  "contactMe": "KONTAKTIERE MICH",
-  "downloadButton": "LEBENSLAUF HERUNTERLADEN",
-  "projectTitle": "Projekte"
+  "footerTitle": "DROP A LINE",
+  "messageButton": "SEND MESSAGE",
+  "contactMe": "CONTACT ME",
+  "downloadButton": "DOWNLOAD RESUME",
+  "projectTitle": "Projects"
 }
