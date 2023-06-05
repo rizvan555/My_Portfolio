@@ -15,7 +15,7 @@
     "react-icons": "^4.8.0",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^6.11.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-simple-typewriter": "^5.0.1",
     "react-ts-typewriter": "^0.1.8-b",
     "typewriter-effect": "^2.20.1",
@@ -23,9 +23,9 @@
   },
   "scripts": {
     "start": "craco start",
+    "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject",
-    "build": "NODE_OPTIONS='--openssl-legacy-provider' next build && next export"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -54,7 +54,7 @@
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
-    "typescript": "^5.0.4"
+    "typescript": "^4.9.5"
   },
   "engines": {
     "npm": "8.x"
