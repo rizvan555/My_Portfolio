@@ -1,5 +1,5 @@
 import React from "react";
-import SocialMedia from "../components/SocialMedia";
+import SocialMedia from "../components/socialMedia";
 import de from "../components/de.json";
 import eng from "../components/eng.json";
 import { useFormik } from "formik";
