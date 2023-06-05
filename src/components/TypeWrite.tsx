@@ -6,7 +6,7 @@ interface TypeWriteProps {
   language: boolean;
 }
 
-function myComponent({ language }: TypeWriteProps) {
+function TypeWrite({ language }: TypeWriteProps) {
   return (
     <main className={`flex relative`}>
       <section className=" md:w-[50vw] w-[80vw] md:mt-[38vh] my-44 md:ml-24 ml-10 font-[Neuemachina,sans-serif]">
@@ -17,6 +17,7 @@ function myComponent({ language }: TypeWriteProps) {
               autoStart: true,
               loop: true,
               delay: 150,
+              deleteSpeed: 20,
             }}
           />
         </h1>
@@ -38,4 +39,4 @@ function myComponent({ language }: TypeWriteProps) {
     </main>
   );
 }
-export default myComponent;
+export default TypeWrite;
