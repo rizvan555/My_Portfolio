@@ -25,5 +25,4 @@ function Home({ language, setLanguage, hamburger, setHamburger }: HomeProps) {
     </div>
   );
 }
-
 export default Home;
