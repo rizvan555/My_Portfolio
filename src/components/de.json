@@ -1,7 +1,8 @@
 {
   "navbar": ["Home", "About", "Projects", "Blog", "Contact"],
   "title": "Full-Stack-Developer",
-  "subtitle": "I'm a MERN full stack developer with a passion for web development.I'm dedicated to constantly learning and improving my skills.",
+  "subtitle": "I'm a MERN full stack developer with a passion for web development..",
+  "subtitle1": "I'm dedicated to constantly learning and improving my skills",
   "hireBtnText": "HIRE ME",
   "aboutMySelfTitle": "ABOUT MYSELF",
   "aboutMySelf": " I am MERN full-stack developer, I have experience building web applications using MongoDB, Express, React, and Node.js. I am proficient in front-end development technologies such as HTML, CSS, and JavaScript, and I have worked with popular frameworks and libraries like React Redux.",
