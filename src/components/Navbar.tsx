@@ -36,19 +36,19 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
   };
   const handleScrollProjectsde = () => {
     window.scrollTo({
-      top: 4550,
+      top: 4300,
       behavior: "smooth",
     });
   };
   const handleScrollBlogEng = () => {
     window.scrollTo({
-      top: 3700,
+      top: 3650,
       behavior: "smooth",
     });
   };
   const handleScrollBlogDe = () => {
     window.scrollTo({
-      top: 3850,
+      top: 3600,
       behavior: "smooth",
     });
   };

@@ -27,7 +27,7 @@ function TypeWrite({ language }: TypeWriteProps) {
               strings: [language ? eng.subtitle : de.subtitle],
               autoStart: true,
               loop: true,
-              delay: 20,
+              delay: 50,
               deleteSpeed: 2,
             }}
           />
