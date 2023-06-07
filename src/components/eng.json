@@ -1,11 +1,13 @@
 {
+  "me": "Hallo, ich bin",
+  "me1": "Rizvan Karimov",
   "navbar": ["Startseite", "Über mich", "Projekte", "Blog", "Kontakt"],
   "title": "Full-Stack-Entwickler",
   "subtitle": "Ich bin ein MERN-Entwickler mit Leidenschaft für Webentwicklung.",
   "subtitle1": "Ich bin ständig bemüht, meine Fähigkeiten zu verbessern und zu lernen.",
   "hireBtnText": "EINSTELLEN",
   "aboutMySelfTitle": "ÜBER MICH",
-  "aboutMySelf": "Ich bin MERN-Full-Stack-Entwickler und habe Erfahrung beim Erstellen von Webanwendungen mit MongoDB, Express, React und Node.js. Ich beherrsche Front-End-Entwicklungstechnologien wie HTML, CSS und JavaScript und habe mit beliebten Frameworks und Bibliotheken wie React Redux gearbeitet.",
+  "aboutMySelf": "Als MERN-Stack-Entwickler habe ich Erfahrung beim Erstellen von Webanwendungen mit MongoDB, Express, React und Node.js. Ich beherrsche Front-End-Entwicklungstechnologien wie HTML, CSS und JavaScript und habe mit beliebten Frameworks und Bibliotheken wie React Redux gearbeitet.",
   "downloadButton": "MEIN LEBENSLAUF",
   "skills": "Fähigkeiten",
   "infoBottom1": "Ich habe auch Erfahrung in der Backend-Entwicklung mit Node.js und habe mit verschiedenen APIs und Datenbanken gearbeitet, um skalierbare und robuste Anwendungen zu erstellen.",
@@ -18,19 +20,19 @@
   ],
   "languagesTitle": "Sprache",
   "languageContain": {
-    "Deutsch": "Obwohl ich noch nicht lange in Deutschland lebe, kenne ich die deutsche Sprache und Kultur in- und auswendig und versuche mich voll zu integrieren. Dementsprechend habe ich direkt nach meiner Ankunft mit Integrationskursen begonnen und diese nach einiger Zeit mit einem C1-Sprachzertifikat erfolgreich abgeschlossen",
+    "Deutsch": "Gleich nachdem ich in Deutschland angekommen bin, habe ich mit einem Integrationskurs begonnen und mein C1-Sprachzertifikat erfolgleich abgeschlossen. Ich bin vertraut mit der deutschen Sprache, sowie mit ihrer Kultur und versuche mich stetig weiter und besser zu integrieren.",
     "Englisch": "Weil ich eine Zeit lang in China und Dubai gelebt und Englisch in meiner Arbeitserfahrung verwendet habe, habe ich Erfahrung mit der englischen Sprache. Ich kann meine Gedanken auf Englisch frei ausdrücken und ich kann die Person verstehen, mit der ich kommuniziere.",
-    "Turkisch": "Ich kann Türkisch grammatikalisch korrekt sprechen, schreiben, lesen und verstehen.",
+    "Türkisch": "Ich kann Türkisch grammatikalisch korrekt sprechen, schreiben, lesen und verstehen.",
     "Russisch": "Da ich meine Sekundarschulbildung in russischer Sprache erhalten habe, kann ich grammatikalisch korrekt auf Russisch schreiben, lesen, verstehen und sprechen.",
     "Aserbaidschanisch": "Aserbaidschanisch ist meine Muttersprache und ich kann es frei sprechen und verstehen."
   },
   "experienceTitle": "Erfahrung",
   "experiences": [
     {
-      "title": "Productionsentwickler",
+      "title": "Produktionsentwickler",
       "company": "IK Hofmann GmbH",
       "date": "November 2021 -  Dezember 2022",
-      "contain": "Ich war verantwortlich für die sichere Annahme von Containern, deren Inspektion durch mich nach der Befüllung durch andere Mitarbeiter und deren ordnungsgemäße Platzierung an den entsprechenden Standorten bei BASF, dem größten Chemieunternehmen. Ich habe bei diesen Aufgaben mit viel Liebe zum Detail gearbeitet und alle notwendigen Vorkehrungen getroffen, um sicherzustellen, dass die Arbeit korrekt ausgeführt wurde. Ich habe sorgfältig darauf geachtet, dass die Behälter ordnungsgemäß etikettiert, gekennzeichnet und so gelagert oder transportiert wurden, dass Schäden an den Produkten vermieden wurden. Darüber hinaus habe ich eng mit meinen Kollegen zusammengearbeitet, um sicherzustellen, dass der Auftrag pünktlich und ohne Probleme abgeschlossen wurde. Ich habe immer darauf geachtet, die Zufriedenheit der Kunden und den Ruf des Unternehmens zu schützen"
+      "contain": "Ich war für die sichere Annahme von Containern verantwortlich. Ich habe die korrekte Befüllung durch andere Mitarbeiter inspiziert und deren ordnungsgemäße Platzierung an den entsprechenden Standorten bei BASF, dem größten Chemieunternehmen überprüft. Bei diesen Aufgaben habe ich mit viel Liebe zum Detail gearbeitet und alle notwendigen Vorkehrungen getroffen, um sicherzustellen, dass die Arbeit korrekt ausgeführt wird. Ich habe sorgfältig darauf geachtet, dass die Behälter ordnungsgemäß etikettiert, gekennzeichnet und so gelagert oder transportiert wurden, dass Schäden an den Produkten vermieden werden konnten. Darüber hinaus habe ich eng mit meinen Kollegen zusammengearbeitet, um sicherzustellen, dass der Auftrag pünktlich und ohne Probleme abgeschlossen wurde. Ich habe immer darauf geachtet, die Zufriedenheit der Kunden und den Ruf des Unternehmens zu schützen."
     },
     {
       "title": "Logistikplaner",
@@ -64,21 +66,21 @@
   "inputContainer": [
     {
       "name": "fullName",
-      "placeholder": "Voller Name",
+      "placeholder": "Name",
       "type": "text"
     },
     {
       "name": "fullEmail",
-      "placeholder": "Volle E-Mail",
+      "placeholder": "E-Mail",
       "type": "email"
     },
     {
       "name": "fullSubject",
-      "placeholder": "Voller Betreff",
+      "placeholder": "Betreff",
       "type": "text"
     }
   ],
-  "footerTitle": "LASSEN SIE EINE LINIE",
+  "footerTitle": "HINTERLASSEN SIE EINE NACHRICHT !",
   "messageButton": "NACHRICHT SENDEN",
   "contactMe": "KONTAKT",
   "downloadButton": "LEBENSLAUF HERUNTERLADEN",

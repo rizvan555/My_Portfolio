@@ -41,7 +41,7 @@ function Header({
             className=" text-slate-500 bg-slate-300 md:w-20 w-6 rounded-full border-[#ce5ef8]"
           >
             <option value="DE">DE 🇩🇪</option>
-            <option value="EN">EN 🇺🇸</option>
+            <option value="EN">EN 🇬🇧</option>
           </select>
 
           <button

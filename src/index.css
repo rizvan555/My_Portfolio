@@ -375,11 +375,12 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
+  transition: all;
 }
 .hvr-outline-in:before {
   content: "";
   position: absolute;
-
+  transition: all;
   border: #8613d3 solid 4px;
   top: -12px;
   right: -12px;

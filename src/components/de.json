@@ -1,4 +1,7 @@
 {
+  "me": "Hi, I'm",
+  "me1": "Rizvan Karimov",
+
   "navbar": ["Home", "About", "Projects", "Blog", "Contact"],
   "title": "Full-Stack-Developer",
   "subtitle": "I'm a MERN full stack developer with a passion for web development..",

@@ -77,7 +77,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
               return (
                 <li
                   key={index}
-                  className=" hvr-outline-in pb-1 hover:text-white tracking-wide"
+                  className=" hvr-outline-in transition-all pb-1 hover:text-white tracking-wide"
                   onClick={handleScrollAbout}
                 >
                   {nav}

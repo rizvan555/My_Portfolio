@@ -15,7 +15,7 @@ function Blog({ language }: BlogProps) {
         <img src={codingMan1} alt="coding-man" />
       </section>
       <section className=" flex md:w-[50vw] w-[80vw] mx-auto pr-5 tracking-wider leading-extra-loose md:mt-6 mt-10">
-        <p className="text-[#fff] md:text-[1.1rem] text-xs ">
+        <p className="text-[#fff] md:text-[1.1rem] text-xs md:leading-9 leading-2">
           {language ? eng.myInfo : de.myInfo}
         </p>
       </section>

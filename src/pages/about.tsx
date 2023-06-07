@@ -55,7 +55,7 @@ function About({ language }: AboutProps) {
           {language ? eng.downloadButton : de.downloadButton}
         </a>
         <div className=" border border-slate-600 w-[60vw]" />
-        <span className=" py-4 font-bold tracking-wide text-xl ">
+        <span className=" py-4 font-bold tracking-wide text-xl text-slate-100">
           {language ? eng.skills : de.skills}
         </span>
         <ul className="md:flex justify-center grid grid-cols-3 gap-4 w-[60vw] flex-wrap py-7 md:text-lg text-[8px]">
