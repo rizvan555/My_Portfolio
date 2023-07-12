@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import TypeWrite from "../components/TypeWrite";
-import { motion } from "framer-motion";
 
 interface HomeProps {
   language: boolean;
