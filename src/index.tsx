@@ -10,7 +10,13 @@ import {
   SignedIn,
   SignedOut,
 } from '@clerk/clerk-react';
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useNavigate,
+} from 'react-router-dom';
 import ProtectedPage from './ProtectedPage';
 
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
@@ -18,11 +24,10 @@ if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
 }
 const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
-
 const SignInPage = () => {
   return (
     <div className="flex justify-center items-center px-10 py-10 h-[100vh] text-center bg-[#100c18] ">
-      <SignIn redirectUrl={'/protected'} routing="path" path="/sign-in" />
+      <SignIn redirectUrl={'/'} routing="path" path="/sign-in" />
     </div>
   );
 };
@@ -30,7 +35,7 @@ const SignInPage = () => {
 const SignUpPage = () => {
   return (
     <div className="flex justify-center items-center px-10 py-10 h-[100vh] text-center bg-[#100c18] ">
-      <SignUp redirectUrl={'/protected'} routing="path" path="/sign-up" />
+      <SignUp redirectUrl={'/'} routing="path" path="/sign-up" />
     </div>
   );
 };
