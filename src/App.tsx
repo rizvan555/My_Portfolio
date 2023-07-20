@@ -7,7 +7,6 @@ import Blog from './pages/blog';
 import Education from './pages/education';
 import Home from './pages/home';
 import About from './pages/about';
-import { SignIn } from '@clerk/clerk-react';
 
 function App() {
   const [language, setLanguage] = useState(true);
