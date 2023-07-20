@@ -1,6 +1,7 @@
-import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
-import Navbar from "./Navbar";
+import React from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import Navbar from './Navbar';
+import ProtectedPage from '../ProtectedPage';
 
 interface HeaderProps {
   language: boolean;
@@ -21,14 +22,14 @@ function Header({
         <div
           className=" font-bold md:text-3xl text-lg mr-16  md:w-[20vw] w-[30vw] text-white md:animate__animated md:animate__jackInTheBox tracking-wide"
           style={{
-            animationIterationCount: "infinite",
-            animationDuration: "3s",
+            animationIterationCount: 'infinite',
+            animationDuration: '3s',
           }}
         >
           Rizvan K.
         </div>
 
-        <div className="flex items-center gap-8 text-[18px] md:ml-0 ml-12">
+        <div className="flex items-center gap-8 text-[16px] md:ml-0 ml-12">
           <Navbar
             language={language}
             setLanguage={setLanguage}
@@ -36,9 +37,9 @@ function Header({
             setHamburger={setHamburger}
           />
           <select
-            value={language ? "DE" : "EN"}
+            value={language ? 'DE' : 'EN'}
             onChange={() => setLanguage(!language)}
-            className=" text-slate-500 bg-slate-300 md:w-20 w-6 rounded-full border-[#ce5ef8]"
+            className=" text-slate-500 text-[12px] bg-slate-300 md:w-16 w-6 rounded-full border-[#ce5ef8] px-3 py-1"
           >
             <option value="DE">DE 🇩🇪</option>
             <option value="EN">EN 🇬🇧</option>
@@ -50,6 +51,7 @@ function Header({
           >
             <GiHamburgerMenu />
           </button>
+          <ProtectedPage />
         </div>
       </header>
     </div>

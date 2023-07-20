@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@clerk/clerk-react": "^4.23.0",
+    "@clerk/clerk-sdk-node": "^4.11.1",
     "@craco/craco": "^7.1.0",
     "@rsuite/icons": "^1.0.2",
     "@testing-library/jest-dom": "^5.16.5",
