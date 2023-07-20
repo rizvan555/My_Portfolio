@@ -1,8 +1,8 @@
-import React from "react";
-import codingMan from "../resource/images/codingMan.jpg";
-import "animate.css";
-import de from "../components/de.json";
-import eng from "../components/eng.json";
+import React, { useEffect, useState } from 'react';
+import codingMan from '../resource/images/codingMan.jpg';
+import 'animate.css';
+import de from '../components/de.json';
+import eng from '../components/eng.json';
 
 interface AboutProps {
   language: boolean;
@@ -11,36 +11,77 @@ interface AboutProps {
 
 function About({ language }: AboutProps) {
   const skills = [
-    "Html",
-    "Css",
-    "Grid",
-    "Tailwind",
-    "Bootstrap",
-    "JavaScript",
-    "TypeScript",
-    "ReactJS",
-    "NextJS",
-    "Material UI",
-    "NodeJS",
-    "Express",
-    "MongoDB",
-    "Material UI",
-    "WordPress",
-    "Git",
-    "GitHub",
-    "VSCode",
-    "Figma",
+    'Html',
+    'Css',
+    'Grid',
+    'Tailwind',
+    'Bootstrap',
+    'JavaScript',
+    'TypeScript',
+    'ReactJS',
+    'NextJS',
+    'Material UI',
+    'NodeJS',
+    'Express',
+    'MongoDB',
+    'Postman',
+    'Jest Testing',
+    'Material UI',
+    'WordPress',
+    'Git',
+    'GitHub',
+    'VSCode',
+    'Figma',
   ];
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Sayfanın aşağı kaydırıldığı yüksekliği kontrol edin (örn. 500px).
+      const scrollHeight = 500; // İsteğe bağlı olarak sayfa yüksekliğini değiştirin.
+
+      // Sayfanın scroll yüksekliği scrollHeight'dan büyükse animasyonu başlatın.
+      if (window.scrollY > scrollHeight) {
+        setIsAnimated(true);
+      } else {
+        setIsAnimated(false);
+      }
+    };
+
+    // Sayfa scroll olayına dinleyici ekle
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean-up fonksiyonu ile event listener'ı kaldırın.
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    // Sayfanın aşağı kaydırıldığı yüksekliği kontrol edin (örn. 500px).
+    const scrollHeight = 500; // İsteğe bağlı olarak sayfa yüksekliğini değiştirin.
+
+    // Sayfanın scroll yüksekliği scrollHeight'dan büyükse animasyonu başlatın.
+    if (window.scrollY > scrollHeight) {
+      setIsAnimated(true);
+    } else {
+      setIsAnimated(false);
+    }
+  };
   return (
     <section
       style={{
         backgroundImage: `url(${codingMan})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
       }}
-      className=" flex justify-center items-center py-16  border-t-2"
+      className=" flex justify-center items-center py-16  border-t-2 "
     >
-      <div className=" flex flex-col items-center text-center bg-[#100c18] md:w-[70vw] w-[90vw] px-8 ">
+      <div
+        className={`flex flex-col items-center text-center bg-[#100c18] md:w-[70vw] w-[90vw] px-8 ${
+          isAnimated ? 'animate__animated animate__fadeInLeft' : ''
+        } transition-all`}
+      >
         <span className=" py-10 tracking-wider text-slate-100 font-bold md:text-2xl text-lg">
           {language ? eng.aboutMySelfTitle : de.aboutMySelfTitle}
         </span>
