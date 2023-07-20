@@ -1,7 +1,6 @@
 import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import Navbar from './Navbar';
-import ProtectedPage from '../ProtectedPage';
 
 interface HeaderProps {
   language: boolean;
@@ -51,7 +50,6 @@ function Header({
           >
             <GiHamburgerMenu />
           </button>
-          <ProtectedPage />
         </div>
       </header>
     </div>

@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div>
-      {/* <SignIn /> */}
       <Home
         language={language}
         setLanguage={setLanguage}
