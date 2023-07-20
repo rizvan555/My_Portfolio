@@ -1,12 +1,12 @@
-import { useState } from "react";
-import portfolioImg from "../resource/images/portfolioImg.png";
-import tastyImg from "../resource/images/tastyImg.png";
-import BurgerApp from "../resource/images/BurgerApp.png";
-import woodies from "../resource/images/woodies.png";
-import pokemonImg from "../resource/images/pokemonImg.png";
-import countries from "../resource/images/countries.png";
-import { AiOutlineGithub } from "react-icons/ai";
-import { motion } from "framer-motion";
+import { useState } from 'react';
+import portfolioImg from '../resource/images/portfolioImg.png';
+import tastyImg from '../resource/images/tastyImg.png';
+import BurgerApp from '../resource/images/BurgerApp.png';
+import woodies from '../resource/images/woodies.png';
+import pokemonImg from '../resource/images/pokemonImg.png';
+import countries from '../resource/images/countries.png';
+import { AiOutlineGithub } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -31,33 +31,33 @@ const item = {
 const Projects = () => {
   const [projects] = useState([
     {
-      projectName: "Portfolio",
-      projectLink: "https://github.com/rizvan555/portfolio-2",
-      projectImage: portfolioImg,
-    },
-    {
-      projectName: "Tasty-App",
-      projectLink: "https://github.com/rizvan555/tasty-app",
-      projectImage: tastyImg,
-    },
-    {
-      projectName: "Burger-App",
-      projectLink: "https://github.com/rizvan555/my-burger-app",
+      projectName: 'Burger-App',
+      projectLink: 'https://github.com/rizvan555/my-burger-app',
       projectImage: BurgerApp,
     },
     {
-      projectName: "Woodies",
-      projectLink: "https://github.com/rizvan555/woodies-project-ts",
+      projectName: 'Tasty-App',
+      projectLink: 'https://github.com/rizvan555/tasty-app',
+      projectImage: tastyImg,
+    },
+    {
+      projectName: 'Portfolio',
+      projectLink: 'https://github.com/rizvan555/portfolio-2',
+      projectImage: portfolioImg,
+    },
+    {
+      projectName: 'Woodies',
+      projectLink: 'https://github.com/rizvan555/woodies-project-ts',
       projectImage: woodies,
     },
     {
-      projectName: "Pokemon",
-      projectLink: "https://github.com/rizvan555/pokemon-game",
+      projectName: 'Pokemon',
+      projectLink: 'https://github.com/rizvan555/pokemon-game',
       projectImage: pokemonImg,
     },
     {
-      projectName: "Countries Wiki",
-      projectLink: "https://github.com/rizvan555/find-your-country",
+      projectName: 'Countries Wiki',
+      projectLink: 'https://github.com/rizvan555/find-your-country',
       projectImage: countries,
     },
   ]);
@@ -81,7 +81,7 @@ const Projects = () => {
           return (
             <motion.ul
               variants={item}
-              className=" md:p-4 p-2 text-center rounded-md md:h-[45vh] md:mb-0 mb-10 bg-transparent myBox opacity-80"
+              className=" md:p-4 p-2 text-center rounded-md md:h-[50vh] md:mb-0 mb-10 bg-transparent myBox opacity-80"
               key={index}
             >
               <li className=" text-xl font-semibold">{project.projectName}</li>
