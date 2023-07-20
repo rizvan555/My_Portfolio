@@ -37,37 +37,19 @@ function About({ language }: AboutProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Sayfanın aşağı kaydırıldığı yüksekliği kontrol edin (örn. 500px).
-      const scrollHeight = 500; // İsteğe bağlı olarak sayfa yüksekliğini değiştirin.
-
-      // Sayfanın scroll yüksekliği scrollHeight'dan büyükse animasyonu başlatın.
+      const scrollHeight = 100;
       if (window.scrollY > scrollHeight) {
         setIsAnimated(true);
       } else {
         setIsAnimated(false);
       }
     };
-
-    // Sayfa scroll olayına dinleyici ekle
     window.addEventListener('scroll', handleScroll);
-
-    // Clean-up fonksiyonu ile event listener'ı kaldırın.
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const scrollHandler = () => {
-    // Sayfanın aşağı kaydırıldığı yüksekliği kontrol edin (örn. 500px).
-    const scrollHeight = 500; // İsteğe bağlı olarak sayfa yüksekliğini değiştirin.
-
-    // Sayfanın scroll yüksekliği scrollHeight'dan büyükse animasyonu başlatın.
-    if (window.scrollY > scrollHeight) {
-      setIsAnimated(true);
-    } else {
-      setIsAnimated(false);
-    }
-  };
   return (
     <section
       style={{
