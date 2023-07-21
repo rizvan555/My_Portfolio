@@ -30,7 +30,7 @@ function Experience({ language }: ExperienceProps) {
     <div className="bg-[#100c18] text-slate-100  border-t-2">
       <header className="flex justify-start md:py-16 py-6 px-20">
         <h2
-          className="md:text-5xl text-xl md:h-20 h-6 font-bold tracking-wider font-serif md:mb-[2vh] mb-[2px] animate__animated overflow-hidden"
+          className="md:text-5xl text-xl md:h-20 h-6 font-bold tracking-wider typewrite md:mb-[2vh] mb-[2px] animate__animated overflow-hidden typewrite"
           style={{ animationDuration: '3s' }}
         >
           {language ? eng.experienceTitle : de.experienceTitle}
@@ -42,14 +42,14 @@ function Experience({ language }: ExperienceProps) {
               return (
                 <div className=" w-[60vw]" key={index}>
                   <h3
-                    className={`border-[#cd69f4] border-t-2 pt-8 md:text-3xl text-base font-serif ${
+                    className={`border-[#cd69f4] border-t-2 pt-8 md:text-3xl text-base typewrite ${
                       isAnimated ? 'animate__animated animate__fadeInLeft' : ''
                     }`}
                   >
                     {experience.title}
                   </h3>
                   <h3
-                    className={`pt-2 md:text-xl text-[13px] mb-4 font-serif ${
+                    className={`pt-2 md:text-xl text-[13px] mb-4 typewrite ${
                       isAnimated ? 'animate__animated animate__fadeInLeft' : ''
                     }`}
                   >
@@ -76,14 +76,14 @@ function Experience({ language }: ExperienceProps) {
               return (
                 <div className=" w-[60vw]">
                   <h3
-                    className={`border-[#cd69f4] border-t-2 pt-8 md:text-3xl text-base font-serif ${
+                    className={`border-[#cd69f4] border-t-2 pt-8 md:text-3xl text-base typewrite ${
                       isAnimated ? 'animate__animated animate__fadeInLeft' : ''
                     }`}
                   >
                     {experience.title}
                   </h3>
                   <h3
-                    className={`pt-2 md:text-xl text-[13px] mb-4 font-serif ${
+                    className={`pt-2 md:text-xl text-[13px] mb-4 typewrite ${
                       isAnimated ? 'animate__animated animate__fadeInLeft' : ''
                     }`}
                   >

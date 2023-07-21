@@ -15,6 +15,9 @@
   transform: scale(1.03);
   opacity: 8;
 }
+.typewrite {
+  font-family: 'Montserrat', sans-serif;
+}
 
 /* ===========React Typing===================  */
 
@@ -50,7 +53,7 @@
   transition-duration: 0.4s;
 }
 .hvr-sweep-to-right:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   top: 0;
@@ -94,7 +97,7 @@
   overflow: hidden;
 }
 .hvr-underline-from-center:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   left: 51%;
@@ -131,7 +134,7 @@
   transition-duration: 0.5s;
 }
 .hvr-bounce-to-right:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   top: 0;
@@ -179,7 +182,7 @@
   transition-duration: 0.3s;
 }
 .hvr-shutter-out-vertical:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   top: 0;
@@ -227,7 +230,7 @@
   transition-duration: 0.3s;
 }
 .hvr-radial-out:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   top: 0;
@@ -274,7 +277,7 @@
   transition-duration: 0.3s;
 }
 .hvr-radial-in:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   top: 0;
@@ -332,7 +335,7 @@
   position: relative;
 }
 .hvr-ripple-out:before {
-  content: "";
+  content: '';
   position: absolute;
   border: #8613d3 solid 6px;
   top: 0;
@@ -378,7 +381,7 @@
   transition: all;
 }
 .hvr-outline-in:before {
-  content: "";
+  content: '';
   position: absolute;
   transition: all;
   border: #8613d3 solid 4px;

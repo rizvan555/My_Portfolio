@@ -61,7 +61,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
 
   return (
     <ul
-      className={`md:flex grid grid-cols-1 md:static absolute top-0 right-0 md:p-0 p-20 md:gap-14 gap-20 text-center ${
+      className={`md:flex grid grid-cols-1 md:static absolute top-0 right-0 md:p-0 p-20 md:gap-10 gap-20 text-center typewrite ${
         hamburger ? "block" : "hidden"
       }  md:bg-transparent bg-slate-200 w-full md:text-white text-black cursor-pointer md:animate__animated animate__lightSpeedInRight transition-all`}
     >
@@ -77,7 +77,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
               return (
                 <li
                   key={index}
-                  className=" hvr-outline-in transition-all pb-1 hover:text-white tracking-wide"
+                  className=" hvr-outline-in w-[8vw] transition-all pb-1 hover:text-white tracking-wide"
                   onClick={handleScrollAbout}
                 >
                   {nav}
@@ -87,7 +87,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
               return (
                 <li
                   key={index}
-                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
+                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white w-[6vw]"
                   onClick={handleScrollProjectsEng}
                 >
                   {nav}
@@ -97,7 +97,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
               return (
                 <li
                   key={index}
-                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
+                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white w-[5vw]"
                   onClick={handleScrollBlogEng}
                 >
                   {nav}
@@ -117,7 +117,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
               return (
                 <li
                   key={index}
-                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white"
+                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white w-[7vw]"
                   onClick={handleScrollHome}
                 >
                   {nav}
