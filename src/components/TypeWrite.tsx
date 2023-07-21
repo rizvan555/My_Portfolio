@@ -10,7 +10,7 @@ interface TypeWriteProps {
 function TypeWrite({ language }: TypeWriteProps) {
   return (
     <main className="flex relative typewrite ">
-      <section className=" md:w-[65vw] w-[80vw] md:mt-[38vh] my-44  md:ml-12 ml-4">
+      <section className=" md:w-[65vw] w-[82vw] md:mt-[38vh] my-44  md:ml-12 ml-4">
         <h1 className="md:text-5xl w-full text-4xl md:mb-8 mb-0 md:mt-10 mt-0 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap flex gap-4 md:h-20 h-36">
           <p className="text-[#c555f4]">
             <span className=" md:inline-flex flex text-slate-100 typewrite font-bold flex-wrap md:ml-0 ml-6">
