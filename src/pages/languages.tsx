@@ -37,7 +37,7 @@ function Languages({ language }: LanguagesProps) {
 
   return (
     <div className="py-10 bg-[#100c18] border-t-2">
-      <header className=" flex pl-20">
+      <header className=" flex md:pl-20 justify-center">
         <h2 className=" md:text-4xl text-xl font-bold mb-8 tracking-wider typewrite whitespace-nowrap text-slate-100">
           {language ? eng.languagesTitle : de.languagesTitle}
         </h2>

@@ -1,8 +1,8 @@
-import React from "react";
-import SocialMedia from "../components/socialMedia";
-import de from "../components/de.json";
-import eng from "../components/eng.json";
-import { useFormik } from "formik";
+import React from 'react';
+import SocialMedia from '../components/socialMedia';
+import de from '../components/de.json';
+import eng from '../components/eng.json';
+import { useFormik } from 'formik';
 
 interface FooterProps {
   language: boolean;
@@ -18,10 +18,10 @@ function Footer({ language }: FooterProps) {
 
   const formik = useFormik({
     initialValues: {
-      fullName: "",
-      fullEmail: "",
-      fullSubject: "",
-      message: "",
+      fullName: '',
+      fullEmail: '',
+      fullSubject: '',
+      message: '',
     },
     onSubmit,
   });
@@ -40,7 +40,7 @@ function Footer({ language }: FooterProps) {
           className="flex flex-col gap-7 md:w-[40vw] w-[80vw]"
           onSubmit={formik.handleSubmit}
         >
-          <h3 className=" mt-19 text-slate-50 font-bold tracking-wider md:text-xl">
+          <h3 className=" mt-19 md:pt-0 pt-16 text-slate-50 font-bold tracking-wider md:text-xl md:text-start text-center">
             {language ? eng.footerTitle : de.footerTitle}
           </h3>
           {language
@@ -102,7 +102,7 @@ function Footer({ language }: FooterProps) {
           <section className="mb-14">
             <a
               className="border border-[#cd69f4] md:p-3 p-2 md:w-[20vw] w-[40vw] mt-10 hvr-radial-out text-center"
-              style={{ backgroundColor: "transparent" }}
+              style={{ backgroundColor: 'transparent' }}
               download="Lebenslauf.pdf"
               href="/Lebenslauf.pdf"
             >

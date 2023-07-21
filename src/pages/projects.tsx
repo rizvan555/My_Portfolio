@@ -68,14 +68,14 @@ const Projects = () => {
       animate={{ opacity: 1 }}
       className=" border-t-2 bg-[#100c18] text-white "
     >
-      <h1 className="text-start md:text-5xl text-xl py-20 mx-20 typewrite font-bold ">
+      <h1 className="md:text-start text-center md:text-5xl text-xl py-20 mx-20 typewrite font-bold ">
         Projects
       </h1>
       <motion.div
         initial="hidden"
         animate="visible"
         variants={container}
-        className=" md:grid grid-cols-3 md:gap-7 md:w-[95vw] w-[70vw] mx-auto py-10 md:mb-0 mb-10"
+        className=" md:grid grid-cols-3 md:gap-7 md:w-[95vw] w-[70vw] mx-auto py-10 md:mb-0 "
       >
         {projects.map((project, index) => {
           return (

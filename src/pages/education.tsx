@@ -27,7 +27,7 @@ function Education({ language }: EducationProps) {
   }, []);
   return (
     <div className="bg-[#100c18] text-slate-100  border-t-2">
-      <header className="flex justify-start py-16 px-20">
+      <header className="flex md:justify-start justify-center text-center py-16 md:px-20">
         <h2
           className="md:text-5xl text-xl h-20 font-bold tracking-wider typewrite md:mb-[2vh] -mb-16 animate__animated overflow-hidden"
           style={{ animationDuration: '3s' }}
