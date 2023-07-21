@@ -38,7 +38,7 @@ function Header({
           <select
             value={language ? 'DE' : 'EN'}
             onChange={() => setLanguage(!language)}
-            className=" text-slate-500 text-[12px] bg-slate-300 md:w-16 w-6 rounded-full border-[#ce5ef8] px-3 py-1"
+            className=" text-slate-500 text-[12px] bg-slate-300 md:w-16 w-16 rounded-full border-[#ce5ef8] px-3 py-1"
           >
             <option value="DE">DE 🇩🇪</option>
             <option value="EN">EN 🇬🇧</option>

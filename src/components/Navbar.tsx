@@ -1,7 +1,7 @@
-import React from "react";
-import de from "../components/de.json";
-import eng from "../components/eng.json";
-import { GiCancel } from "react-icons/gi";
+import React from 'react';
+import de from '../components/de.json';
+import eng from '../components/eng.json';
+import { GiCancel } from 'react-icons/gi';
 
 interface NavbarProps {
   language: boolean;
@@ -13,57 +13,57 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
   const handleScrollHome = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   const handleScrollAbout = () => {
     window.scrollTo({
       top: window.innerHeight,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   const handleScrollAboutDe = () => {
     window.scrollTo({
       top: window.innerHeight,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   const handleScrollProjectsEng = () => {
     window.scrollTo({
       top: 4400,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   const handleScrollProjectsde = () => {
     window.scrollTo({
       top: 4300,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   const handleScrollBlogEng = () => {
     window.scrollTo({
       top: 3650,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   const handleScrollBlogDe = () => {
     window.scrollTo({
       top: 3600,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   const handleScrollContact = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   return (
     <ul
       className={`md:flex grid grid-cols-1 md:static absolute top-0 right-0 md:p-0 p-20 md:gap-10 gap-20 text-center typewrite ${
-        hamburger ? "block" : "hidden"
-      }  md:bg-transparent bg-slate-200 w-full md:text-white text-black cursor-pointer md:animate__animated animate__lightSpeedInRight transition-all`}
+        hamburger ? 'block' : 'hidden'
+      } z-50 leading-0 md:bg-transparent bg-slate-200 w-full md:text-white text-black cursor-pointer md:animate__animated animate__lightSpeedInRight transition-all`}
     >
       <button
         className="absolute top-10 right-10 "
@@ -73,37 +73,37 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
       </button>
       {language
         ? eng.navbar.map((nav, index) => {
-            if (nav === "About" || nav === "Über mich") {
+            if (nav === 'About' || nav === 'Über mich') {
               return (
                 <li
                   key={index}
-                  className=" hvr-outline-in w-[8vw] transition-all pb-1 hover:text-white tracking-wide"
+                  className=" hvr-outline-in md:w-[8vw] transition-all pb-1 hover:text-white tracking-wide"
                   onClick={handleScrollAbout}
                 >
                   {nav}
                 </li>
               );
-            } else if (nav === "Projects" || nav === "Projekte") {
+            } else if (nav === 'Projects' || nav === 'Projekte') {
               return (
                 <li
                   key={index}
-                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white w-[6vw]"
+                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white md:w-[6vw]"
                   onClick={handleScrollProjectsEng}
                 >
                   {nav}
                 </li>
               );
-            } else if (nav === "Blog") {
+            } else if (nav === 'Blog') {
               return (
                 <li
                   key={index}
-                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white w-[5vw]"
+                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white md:w-[5vw]"
                   onClick={handleScrollBlogEng}
                 >
                   {nav}
                 </li>
               );
-            } else if (nav === "Contact" || nav === "Kontakt") {
+            } else if (nav === 'Contact' || nav === 'Kontakt') {
               return (
                 <li
                   key={index}
@@ -113,11 +113,11 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
                   {nav}
                 </li>
               );
-            } else if (nav === "Home" || nav === "Startseite") {
+            } else if (nav === 'Home' || nav === 'Startseite') {
               return (
                 <li
                   key={index}
-                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white w-[7vw]"
+                  className=" tracking-wide hvr-outline-in pb-1 hover:text-white md:w-[7vw]"
                   onClick={handleScrollHome}
                 >
                   {nav}
@@ -135,7 +135,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
             }
           })
         : de.navbar.map((nav, index) => {
-            if (nav === "About" || nav === "Über mich") {
+            if (nav === 'About' || nav === 'Über mich') {
               return (
                 <li
                   key={index}
@@ -145,7 +145,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
                   {nav}
                 </li>
               );
-            } else if (nav === "Projects" || nav === "Projekte") {
+            } else if (nav === 'Projects' || nav === 'Projekte') {
               return (
                 <li
                   key={index}
@@ -155,7 +155,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
                   {nav}
                 </li>
               );
-            } else if (nav === "Blog") {
+            } else if (nav === 'Blog') {
               return (
                 <li
                   key={index}
@@ -165,7 +165,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
                   {nav}
                 </li>
               );
-            } else if (nav === "Contact" || nav === "Kontakt") {
+            } else if (nav === 'Contact' || nav === 'Kontakt') {
               return (
                 <li
                   key={index}
@@ -175,7 +175,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
                   {nav}
                 </li>
               );
-            } else if (nav === "Home" || nav === "Startseite") {
+            } else if (nav === 'Home' || nav === 'Startseite') {
               return (
                 <li
                   key={index}
