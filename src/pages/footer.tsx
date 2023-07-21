@@ -34,13 +34,13 @@ function Footer({ language }: FooterProps) {
   };
 
   return (
-    <div className="flex justify-center bg-[#100c18] h-[100vh] md:p-4 flex-col border-t-2">
-      <main className="flex justify-around flex-wrap md:mt-0 mt-56 md:mb-0 mb-32">
+    <div className="flex justify-center bg-[#100c18] md:p-4 flex-col border-t-2">
+      <main className="flex justify-around flex-wrap md:mt-0 mt-56 pb-20 ">
         <form
           className="flex flex-col gap-7 md:w-[40vw] w-[80vw]"
           onSubmit={formik.handleSubmit}
         >
-          <h3 className=" mt-19 md:pt-0 pt-16 text-slate-50 font-bold tracking-wider md:text-xl md:text-start text-center">
+          <h3 className=" mt-19 md:pt-0 pt-28 text-slate-50 font-bold tracking-wider md:text-xl md:text-start text-center">
             {language ? eng.footerTitle : de.footerTitle}
           </h3>
           {language
