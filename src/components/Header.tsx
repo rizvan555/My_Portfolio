@@ -19,7 +19,7 @@ function Header({
     <div>
       <header className="flex items-center z-10 md:bg-[rgba(0,0,0,0.8)] md:justify-between px-10 py-5 border border-b-[#cd69f4] border-x-0 typewrite font-bold md:fixed min-w-full">
         <div
-          className=" font-bold md:text-3xl text-lg mr-16  md:w-[20vw] w-[35vw] text-white md:animate__animated md:animate__jackInTheBox tracking-wide"
+          className="font-bold md:text-3xl text-lg md:mr-16 md:w-[20vw] w-[60vw] text-white md:animate__animated md:animate__jackInTheBox tracking-wide"
           style={{
             animationIterationCount: 'infinite',
             animationDuration: '3s',
@@ -38,7 +38,7 @@ function Header({
           <select
             value={language ? 'DE' : 'EN'}
             onChange={() => setLanguage(!language)}
-            className=" text-slate-500 text-[12px] bg-slate-300 md:w-16 w-14 rounded-full border-[#ce5ef8] px-3 py-1"
+            className=" text-slate-500 text-[12px] bg-slate-300 md:w-16 w-15 rounded-full border-[#ce5ef8] px-3 py-1"
           >
             <option value="DE">DE 🇩🇪</option>
             <option value="EN">EN 🇬🇧</option>

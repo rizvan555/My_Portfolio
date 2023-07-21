@@ -30,7 +30,7 @@ function Experience({ language }: ExperienceProps) {
     <div className="bg-[#100c18] text-slate-100  border-t-2">
       <header className="flex justify-start md:py-16 py-6 px-20">
         <h2
-          className="text-center md:text-5xl text-xl md:h-20 h-6 font-bold tracking-wider typewrite md:mb-[2vh] mb-[2px] animate__animated overflow-hidden typewrite"
+          className="text-center md:text-5xl text-xl md:h-20 h-6 font-bold tracking-wider typewrite md:mb-[2vh] mb-[3vh] animate__animated overflow-hidden typewrite"
           style={{ animationDuration: '3s' }}
         >
           {language ? eng.experienceTitle : de.experienceTitle}
