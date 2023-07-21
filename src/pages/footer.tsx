@@ -35,7 +35,7 @@ function Footer({ language }: FooterProps) {
 
   return (
     <div className="flex justify-center bg-[#100c18] md:p-4 flex-col border-t-2">
-      <main className="flex justify-around flex-wrap md:mt-0 mt-56 pb-20 ">
+      <main className="flex justify-around flex-wrap md:mt-0 mt-4 pb-20 ">
         <form
           className="flex flex-col gap-7 md:w-[40vw] w-[80vw]"
           onSubmit={formik.handleSubmit}
@@ -101,7 +101,7 @@ function Footer({ language }: FooterProps) {
 
           <section className="mb-14">
             <a
-              className="border border-[#cd69f4] md:p-3 p-2 md:w-[20vw] w-[40vw] mt-10 hvr-radial-out text-center"
+              className="border border-[#cd69f4] md:px-3 px-6 md:py-3 py-2 md:w-[20vw] w-[50vw] mt-10 hvr-radial-out text-center"
               style={{ backgroundColor: 'transparent' }}
               download="Lebenslauf.pdf"
               href="/Lebenslauf.pdf"
