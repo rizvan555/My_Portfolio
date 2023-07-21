@@ -68,7 +68,7 @@ const Projects = () => {
       animate={{ opacity: 1 }}
       className=" border-t-2 bg-[#100c18] text-white "
     >
-      <h1 className="text-start md:text-5xl text-xl py-20 mx-20 font-serif font-bold ">
+      <h1 className="text-start md:text-5xl text-xl py-20 mx-20 typewrite font-bold ">
         Projects
       </h1>
       <motion.div

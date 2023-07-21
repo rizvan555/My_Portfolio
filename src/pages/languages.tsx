@@ -38,7 +38,7 @@ function Languages({ language }: LanguagesProps) {
   return (
     <div className="py-10 bg-[#100c18] border-t-2">
       <header className=" flex pl-20">
-        <h2 className=" md:text-4xl text-xl font-bold mb-8 tracking-wider font-serif  whitespace-nowrap text-slate-100">
+        <h2 className=" md:text-4xl text-xl font-bold mb-8 tracking-wider typewrite whitespace-nowrap text-slate-100">
           {language ? eng.languagesTitle : de.languagesTitle}
         </h2>
       </header>
@@ -55,7 +55,7 @@ function Languages({ language }: LanguagesProps) {
                     <li
                       key={index}
                       onClick={() => handleClick(language)}
-                      className={`tracking-wider cursor-pointer font-serif ${
+                      className={`tracking-wider cursor-pointer typewrite  ${
                         click === language
                           ? 'hover:text-[#000] active:text-[#000] pb-1 font-bold text-[#020202]} '
                           : ''

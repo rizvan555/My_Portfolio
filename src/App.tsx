@@ -13,7 +13,7 @@ function App() {
   const [hamburger, setHamburger] = useState(false);
 
   return (
-    <div>
+    <div className='typewrite'>
       <Home
         language={language}
         setLanguage={setLanguage}
