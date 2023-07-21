@@ -101,7 +101,7 @@ function Footer({ language }: FooterProps) {
 
           <section className="mb-14">
             <a
-              className="border border-[#cd69f4] md:px-3 px-6 md:py-3 py-2 md:w-[20vw] w-[50vw] mt-10 hvr-radial-out text-center"
+              className="border border-[#cd69f4] md:px-3 px-6 md:py-3 py-2 md:w-[20vw] w-[55vw] mt-10 hvr-radial-out text-center"
               style={{ backgroundColor: 'transparent' }}
               download="Lebenslauf.pdf"
               href="/Lebenslauf.pdf"

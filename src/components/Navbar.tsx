@@ -63,7 +63,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
     <ul
       className={`md:flex grid grid-cols-1 md:static absolute top-0 right-0 md:p-0 p-20 md:gap-10 gap-20 text-center typewrite ${
         hamburger ? 'block' : 'hidden'
-      } z-50 leading-0 md:bg-transparent bg-slate-600 w-full md:text-white text-black cursor-pointer md:animate__animated animate__lightSpeedInRight transition-all`}
+      } z-50 leading-0 md:bg-transparent bg-slate-600 w-full md:text-white cursor-pointer md:animate__animated animate__lightSpeedInRight transition-all`}
     >
       <button
         className="absolute top-10 right-10"
