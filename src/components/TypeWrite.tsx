@@ -10,12 +10,14 @@ interface TypeWriteProps {
 function TypeWrite({ language }: TypeWriteProps) {
   return (
     <main className="flex relative typewrite ">
-      <section className=" md:w-[65vw] w-[90vw] md:mt-[38vh] my-44 md:ml-12 ml-6">
-        <h1 className="md:text-5xl w-full text-2xl md:mb-8 mb-0 mt-10 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap flex gap-4 h-20">
-          <p className="text-[#c555f4] ">
-            <span className="text-slate-100 typewrite font-bold">{language ? eng.me : de.me}</span>
+      <section className=" md:w-[65vw] w-[80vw] md:mt-[38vh] my-44  ml-12">
+        <h1 className="md:text-5xl w-full text-4xl md:mb-8 mb-0 md:mt-10 mt-0 text-slate-200/100 font-serif tracking-wide animate__animated overflow-hidden border-r-orange-500 whitespace-nowrap flex gap-4 md:h-20 h-36">
+          <p className="text-[#c555f4]">
+            <span className=" md:inline-flex flex text-slate-100 typewrite font-bold flex-wrap md:ml-0 ml-6">
+              {language ? eng.me : de.me}
+            </span>
             &nbsp;
-            <span className="text-[#c555f4] typewrite font-bold">
+            <span className="md:inline-flex flex text-[#c555f4] typewrite font-bold  md:flex-nowrap flex-wrap">
               {language ? eng.me1 : de.me1}
             </span>
           </p>
@@ -28,7 +30,7 @@ function TypeWrite({ language }: TypeWriteProps) {
             }}
           />
         </h1>
-        <h3 className="mb-11 md:text-[18px] text-base font-light tracking-wide md:w-[60vw] text-[#c555f4]">
+        <h3 className="mb-11 md:text-[18px] text-base font-light tracking-wide md:w-[60vw] w-[40wv] text-[#c555f4]">
           <Typewriter
             options={{
               strings: [
@@ -43,7 +45,7 @@ function TypeWrite({ language }: TypeWriteProps) {
           />
         </h3>
         <div className="md:absolute bottom-10 right-0 md:block hidden">
-          <img src={myNewPhoto} alt="myPhoto5" width={450} height={450} />
+          <img src={myNewPhoto} alt="myPhoto5" width={400} height={400} />
         </div>
       </section>
     </main>
