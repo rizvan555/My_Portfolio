@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import portfolioImg from '../resource/images/portfolioImg.png';
 import tastyImg from '../resource/images/tastyImg.png';
 import BurgerApp from '../resource/images/BurgerApp.png';
@@ -61,6 +61,22 @@ const Projects = () => {
       projectImage: countries,
     },
   ]);
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = 4000;
+      if (window.scrollY > scrollHeight) {
+        setIsAnimated(true);
+      } else {
+        setIsAnimated(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <motion.div
@@ -81,7 +97,9 @@ const Projects = () => {
           return (
             <motion.ul
               variants={item}
-              className=" md:p-4 p-2 text-center rounded-md md:h-[50vh] md:mb-0 mb-10 bg-transparent myBox opacity-80"
+              className={`md:p-4 p-2 text-center rounded-md md:h-[50vh] md:mb-0 mb-10 bg-transparent myBox opacity-80 ${
+                isAnimated ? 'animate__animated animate__fadeInRight' : ''
+              }`}
               key={index}
             >
               <li className=" text-xl font-semibold">{project.projectName}</li>
