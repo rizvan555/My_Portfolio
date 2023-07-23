@@ -30,25 +30,25 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
   };
   const handleScrollProjectsEng = () => {
     window.scrollTo({
-      top: 4400,
+      top: 4700,
       behavior: 'smooth',
     });
   };
   const handleScrollProjectsde = () => {
     window.scrollTo({
-      top: 4300,
+      top: 4400,
       behavior: 'smooth',
     });
   };
   const handleScrollBlogEng = () => {
     window.scrollTo({
-      top: 3650,
+      top: 3950,
       behavior: 'smooth',
     });
   };
   const handleScrollBlogDe = () => {
     window.scrollTo({
-      top: 3600,
+      top: 3700,
       behavior: 'smooth',
     });
   };
