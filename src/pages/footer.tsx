@@ -94,7 +94,7 @@ function Footer({ language }: FooterProps) {
             {language ? eng.contactMe : de.contactMe}
           </h3>
           <a href="/address">Erlenbacher Straße 8, 67659 Kaiserslautern</a>
-          <a href="tel:+4917680358387">+4917680358387</a>
+          <a href="tel:+4915151400004">+49 151 51400004</a>
           <a href="mailto:karimovrizvan84@gmail.com">
             karimovrizvan84@gmail.com
           </a>
