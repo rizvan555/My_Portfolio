@@ -69,7 +69,7 @@ function Navbar({ language, hamburger, setHamburger }: NavbarProps) {
         className="absolute top-10 right-10"
         onClick={() => setHamburger(!hamburger)}
       >
-        <GiCancel size={25} className="hover:text-primary md:hidden " />
+        <GiCancel size={25} className="hover:text-primary md:hidden" />
       </button>
       {language
         ? eng.navbar.map((nav, index) => {
