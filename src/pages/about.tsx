@@ -4,6 +4,24 @@ import 'animate.css';
 import de from '../components/de.json';
 import eng from '../components/eng.json';
 
+const variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const images = {
+  hidden: {
+    opacity: 0,
+    x: 30,
+  },
+  show: { opacity: 1, x: 0, transition: { duration: 1 } },
+};
+
 interface AboutProps {
   language: boolean;
   setLanguage: React.Dispatch<React.SetStateAction<boolean>>;

@@ -2,6 +2,25 @@ import React, { useEffect, useState } from 'react';
 import 'animate.css/animate.min.css';
 import de from '../components/de.json';
 import eng from '../components/eng.json';
+import { motion } from 'framer-motion';
+
+const variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const images = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  show: { opacity: 1, y: 0, transition: { duration: 1 } },
+};
 
 interface LanguagesProps {
   language: boolean;
@@ -52,7 +71,10 @@ function Languages({ language }: LanguagesProps) {
             {language
               ? eng.languages.map((language, index) => {
                   return (
-                    <li
+                    <motion.li
+                      variants={variants}
+                      initial="hidden"
+                      animate="show"
                       key={index}
                       onClick={() => handleClick(language)}
                       className={`tracking-wider cursor-pointer typewrite  ${
@@ -62,12 +84,15 @@ function Languages({ language }: LanguagesProps) {
                       }`}
                     >
                       {language}
-                    </li>
+                    </motion.li>
                   );
                 })
               : de.languages.map((language, index) => {
                   return (
-                    <li
+                    <motion.li
+                      variants={variants}
+                      initial="hidden"
+                      animate="show"
                       key={index}
                       onClick={() => handleClick(language)}
                       className={`tracking-wider cursor-pointer font-serif ${
@@ -77,7 +102,7 @@ function Languages({ language }: LanguagesProps) {
                       }`}
                     >
                       {language}
-                    </li>
+                    </motion.li>
                   );
                 })}
           </ul>
